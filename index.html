@@ -4,10 +4,10 @@
     <title>Normconf: The Normcore Tech Conference</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Normconf is the tech conference about all the stuff that matters, but doesn't get the spotlight"/>
+    <meta name="description" content="Normconf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight"/>
     <meta property="og:title" content="Normconf" />
     <meta property="og:url" content="https://normconf.com" />
-    <meta name="og:description" content="Normconf is the tech conference about all the stuff that matters in tech, but doesn't get the spotlight"/>
+    <meta name="og:description" content="Normconf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight"/>
     <meta property="og:image" content="https://normconf.com/images/normconf.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:image" content="https://normconf.com/images/normconf.png" />
@@ -18,7 +18,7 @@
     <link href="fontawesome/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <style>
-      body {
+      .hero {
         background-color: #414141ff;
         color: #FFFFFF;
         font-family: sans-serif;
@@ -29,21 +29,108 @@
         margin-right: auto;
         width: 50%;
       }
-      a:link {
+      a.dark_link:link {
         color: #FFFFFF;
       }
-      a:visited {
+      a.dark_link:visited {
         color: #afafafff;
       }
-      a:active {
+      a.dark_link:active {
         color: #10ce0dff;
       }
-      a:hover {
+      a.dark_link:hover {
         color: #10ce0dff;
       }
       </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+
+    });
+  </script>
   </head>
   <body>
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation" style="background-color: #414141ff; color: #FFFFFF;">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://normconf.com">
+          <img src="images/normconf_prompt1b.png" height="40">
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNormConf">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarNormConf" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#details">
+            Details
+          </a>
+
+          <a class="navbar-item" href="#register">
+            Register
+          </a>
+
+          <a class="navbar-item" href="#speakers">
+            Speakers
+          </a>
+
+          <a class="navbar-item" href="#sponsors">
+            Sponsors
+          </a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#about">
+                About
+              </a>
+              <a class="navbar-item" href="#sponsors">
+                Sponsor
+              </a>
+              <a class="navbar-item" href="#contact">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </nav>
     <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
@@ -58,39 +145,10 @@
             <div class="column is-6">
               <p><h2 class="subtitle is-2" style="color: #ffffff">2022-12-15</h2></p>
               <p><h2 class="subtitle is-2" style="color: #ffffff">Online</h2></p>
-              <p><h3 class="subtitle is-3" style="color: #ffffff">Details coming soon</h3></p>
+              <!-- <p><h3 class="subtitle is-3" style="color: #ffffff">Details coming soon</h3></p> -->
             </div>
             <div class="column">
               <img src="images/its_happening.webp" width="400">
-            </div>
-          </div>
-          <div class="columns is-centered">
-            <div class="column has-text-centered is-narrow">
-              <h3 class="title is-3" style="color: #ffffff">Organizers</h3>
-            </div>
-          </div>
-          <div class="columns is-mobile is-centered has-text-centered">
-            <div class="column has-text-centered is-narrow">
-              <table>
-                <tbody>
-                  <tr>
-                    <td><a href="https://www.twitter.com/vboykis">Vicki Boykis</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="https://twitter.com/econoben">Ben Labaschin</a></td>
-                  </tr>
-                  <tr>
-                    <td>Guenia Izquierdo</td>
-                  </tr>
-                  <tr>
-                    <td><a href="https://twitter.com/jeremyjordan">Jeremy Jordan</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="https://twitter.com/roycoding">Roy Keyes</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
@@ -99,11 +157,270 @@
         <nav class="tabs is-fullwidth">
           <div class="container">
             <ul>
-              <li><a href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
-              <li><a href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span> info@normconf.com</a></li>
+              <li><a class="dark_link" href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
+              <li><a class="dark_link" href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span> info@normconf.com</a></li>
             </ul>
           </div>
         </nav>
+      </div>
+    </section>
+
+    <a id="details"></a>
+    <section class="section is-medium m-5">
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <div class="content is-medium">
+            <h1 class="title">📅 Details 📅</h1>
+            <h2 class="subtitle">
+              <ul style="list-style-image: url('images/normconf_prompt_list.png');">
+              <li>Thursday, 15 Dec 2022</li>
+              <li>Online</li>
+              <li>Cost: <a href="https://normconf.eventbrite.ca">FREE</a></li>
+              <li>12:30 UTC - 04:00 UTC</li>
+              <li>07:30 EST - 23:00 EST</li>
+              <li>Full schedule TBA</li>
+              </ul>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <a id="register"></a>
+      <div class="columns is-centered mt-6">
+        <div class="column is-6">
+          <div class="content is-medium">
+            <h1 class="title">🎫 Register 🎫</h1>
+            <h3>Register for free <a href="https://normconf.eventbrite.ca">HERE ⬅️⬅️⬅️</a></h3>
+            All (optional) donations go to support <a href="https://numfocus.org/">NumFOCUS</a>.
+          </div>
+        </div>
+      </div>
+
+      <a id="speakers"></a>
+      <div class="columns is-centered mt-6">
+        <div class="column is-8">
+          <div class="content is-medium">
+            <h1 class="title">🎤 Speakers 🎤</h1>
+            <p>We are assembling a great lineup of speakers to talk about the most Normcore topics in data, machine learning, and tech. The stuff that matters.</p>
+            <div class="columns is-centered has-text-centered">
+              <div class="column has-text-centered">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Vicki Boykis<br></td>
+                  </tr>
+                  <tr>
+                    <td>Vincent Warmerdam</td>
+                  </tr>
+                  <tr>
+                    <td>Tim Hopper</td>
+                  </tr>
+                  <tr>
+                    <td>Lynn Cherny</td>
+                  </tr>
+                  <tr>
+                    <td>Matthijs Brouns</td>
+                  </tr>
+                  <tr>
+                    <td>Guenia Izquierdo</td>
+                  </tr>
+                  <tr>
+                    <td>JD Long</td>
+                  </tr>
+                  <tr>
+                    <td>Helena Sarin</td>
+                  </tr>
+                  <tbody>
+                </table>
+              </div>
+              <div class="column has-text-centered">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Zachary Blackwood</td>
+                  </tr>
+                  <tr>
+                    <td>Joel Grus</td>
+                  </tr>
+                  <tr>
+                    <td>Peter Sobot</td>
+                  </tr>
+                  <tr>
+                    <td>Jeremy Jordan</td>
+                  </tr>
+                  <tr>
+                    <td>Shreya Shankar</td>
+                  </tr>
+                  <tr>
+                    <td>Jowanza Joseph</td>
+                  </tr>
+                  <tr>
+                    <td>Ethan Rosenthal</td>
+                  </tr>
+                  <tr>
+                    <td>Roy Keyes</td>
+                  </tr>
+                  <tbody>
+                </table>
+              </div>
+              <div class="column has-text-centered">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Rhian Thomas<br></td>
+                  </tr>
+                  <tr>
+                    <td>Caitlin Hudon</td>
+                  </tr>
+                  <tr>
+                    <td>Sean Taylor</td>
+                  </tr>
+                  <tr>
+                    <td>Luca Belli</td>
+                  </tr>
+                  <tr>
+                    <td>Ben Labaschin</td>
+                  </tr>
+                  <tr>
+                    <td>James Kirk</td>
+                  </tr>
+                  <tr>
+                    <td>Julia Silge</td>
+                  </tr>
+                  <tr>
+                    <td>Brandon Roher</td>
+                  </tr>
+                  <tbody>
+                </table>
+              </div>
+              <div class="column has-text-centered">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Peter Baumgartner<br></td>
+                  </tr>
+                  <tr>
+                    <td>Brianna McHorse</td>
+                  </tr>
+                  <tr>
+                    <td>Katie Bauer</td>
+                  </tr>
+                  <tr>
+                    <td>Juliet Houghland</td>
+                  </tr>
+                  <tr>
+                    <td>Josh Wills</td>
+                  </tr>
+                  <tr>
+                    <td>Rose Weigely</td>
+                  </tr>
+                  <tr>
+                    <td>Chris Albon</td>
+                  </tr>
+                  <tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a id="sponsors"></a>
+    <section class="section is-medium m-5">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content is-medium">
+            <h1 class="title">💰 Sponsors 💰</h1>
+            <!-- <h2 class="subtitle">
+              Thank you to all of our institutional, corporate, and individual sponsors!
+            </h2> -->
+            <p>For question and info on sponsorship, please contact us at <a href="mailto:sponsorship@normconf.com">sponsorship@normconf.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section is-medium m-5">
+      <div class="columns is-centered">
+        <a id="about"></a>
+        <div class="column is-6">
+          <div class="content is-medium">
+            <h1 class="title">📖 About 📖</h1>
+            <h3>
+              NormConf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight.
+            </h3>
+            <p>I was once said that a single tweet could launch a thousand ships, and so it was for NormConf:</p>
+            <div class="columns is-mobile is-centered has-text-centered">
+              <div class="column has-text-centered is-narrow">
+                <a href="https://twitter.com/vboykis/status/1552066833582276610"><img src="images/vicki_tweet.png" width="352"></a>
+              </div>
+            </div>
+
+            <article class="media">
+              <div class="media-content">
+                <div class="content">
+                  <p>What if there were a conference about all the mundane, behind-the-scenes, how-the-sausage-is-made, middlebrow, unsexy, normcore stuff in the data and ML parts of the tech world?</p>
+                </div>
+              </div>
+              <figure class="media-right">
+                <p class="image is-64x64">
+                  <img src="images/thinking_face_emoji.png">
+                </p>
+              </figure>
+            </article>
+            <p>We thought there should be!</p>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column has-text-centered is-narrow">
+              <div class="content is-medium">
+                <h3>🤓 Organizers 🤓</h3>
+              </div>
+            </div>
+          </div>
+          <div class="columns is-mobile is-centered has-text-centered">
+            <div class="column has-text-centered is-narrow">
+              <div class="content is-medium">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><a href="https://www.twitter.com/vboykis">Vicki Boykis</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://twitter.com/econoben">Ben Labaschin</a></td>
+                    </tr>
+                    <tr>
+                      <td>Guenia Izquierdo</td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://twitter.com/jeremyjordan">Jeremy Jordan</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://twitter.com/roycoding">Roy Keyes</a></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </section>
+
+    <section class="section is-medium m-5"> -->
+      <div class="columns is-centered mt-6">
+        <a id="contact"></a>
+        <div class="column is-6">
+          <div class="content is-medium">
+            <h1 class="title">📠 Contact 📠</h1>
+            <ul style="list-style-type: none;">
+              <li style=""><a href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
+              <li><a href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span> info@normconf.com</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </body>
