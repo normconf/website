@@ -42,29 +42,44 @@
         color: #10ce0dff;
       }
       </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
 
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
 
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
 
       });
-    });
+    </script>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-    });
-  </script>
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+    
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '403819644427',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-403819644427',
+            onOrderComplete: exampleCallback
+        });
+    </script>
   </head>
   <body>
     <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation" style="background-color: #414141ff; color: #FFFFFF;">
@@ -168,9 +183,9 @@
     <a id="details"></a>
     <section class="section is-medium m-5">
       <div class="columns is-centered">
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content is-medium">
-            <h1 class="title">📅 Details 📅</h1>
+            <h1 class="title has-text-centered">📅 Details 📅</h1>
             <h2 class="subtitle">
               <ul style="list-style-image: url('images/normconf_prompt_list.png');">
               <li>Thursday, 15 Dec 2022</li>
@@ -187,20 +202,26 @@
 
       <a id="register"></a>
       <div class="columns is-centered mt-6">
-        <div class="column is-6">
+        <div class="column is-4 has-text-centered">
           <div class="content is-medium">
             <h1 class="title">🎫 Register 🎫</h1>
-            <h3>Register for free <a href="https://normconf.eventbrite.ca">HERE ⬅️⬅️⬅️</a></h3>
-            All (optional) donations go to support <a href="https://numfocus.org/">NumFOCUS</a>.
+            <!-- <h3>Register for free <a href="https://normconf.eventbrite.ca">HERE ⬅️⬅️⬅️</a></h3> -->
+            <!-- Noscript content for added SEO -->
+          <noscript><a href="https://normconf.eventbrite.ca" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+          <!-- You can customize this button any way you like -->
+          <button id="eventbrite-widget-modal-trigger-403819644427" type="button" class="button is-large is-danger m-5">REGISTER FREE</button>
+          <p>All (optional) donations go to support <a href="https://numfocus.org/">NumFOCUS</a>.</p>
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="section is-medium m-5" style="background-color: #6017af;">
       <a id="speakers"></a>
       <div class="columns is-centered mt-6">
         <div class="column is-8">
           <div class="content is-medium">
-            <h1 class="title">🎤 Speakers 🎤</h1>
+            <h1 class="title has-text-centered">🎤 Speakers 🎤</h1>
             <p>We are assembling a great lineup of speakers to talk about the most Normcore topics in data, machine learning, and tech. The stuff that matters.</p>
             <div class="columns is-centered has-text-centered">
               <div class="column has-text-centered">
@@ -326,10 +347,11 @@
       </div>
     </section>
 
+
     <a id="sponsors"></a>
     <section class="section is-medium m-5">
       <div class="columns is-centered">
-        <div class="column is-8">
+        <div class="column is-6 has-text-centered">
           <div class="content is-medium">
             <h1 class="title">💰 Sponsors 💰</h1>
             <!-- <h2 class="subtitle">
@@ -341,16 +363,22 @@
       </div>
     </section>
 
-    <section class="section is-medium m-5">
+    <section class="section is-medium m-5" style="background-color: #ef028c;">
       <div class="columns is-centered">
         <a id="about"></a>
         <div class="column is-6">
           <div class="content is-medium">
-            <h1 class="title">📖 About 📖</h1>
+            <h1 class="title has-text-centered">📖 About 📖</h1>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered is-vcentered">
+        <div class="column is-5">
+          <div class="content is-medium">
             <h3>
               NormConf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight.
             </h3>
-            <p>I was once said that a single tweet could launch a thousand ships, and so it was for NormConf:</p>
+            <p>It was once said that a single tweet could launch a thousand ships, and so it was for NormConf:</p>
             <div class="columns is-mobile is-centered has-text-centered">
               <div class="column has-text-centered is-narrow">
                 <a href="https://twitter.com/vboykis/status/1552066833582276610"><img src="images/vicki_tweet.png" width="352"></a>
@@ -371,7 +399,9 @@
             </article>
             <p>We thought there should be!</p>
           </div>
+        </div>
 
+        <div class="column is-5">
           <div class="columns is-centered">
             <div class="column has-text-centered is-narrow">
               <div class="content is-medium">
@@ -407,14 +437,14 @@
           </div>
         </div>
       </div>
-    <!-- </section>
+    </section>
 
-    <section class="section is-medium m-5"> -->
+    <section class="section is-medium m-5">
       <div class="columns is-centered mt-6">
         <a id="contact"></a>
-        <div class="column is-6">
+        <div class="column is-2">
           <div class="content is-medium">
-            <h1 class="title">📠 Contact 📠</h1>
+            <h1 class="title has-text-centered">📠 Contact 📠</h1>
             <ul style="list-style-type: none;">
               <li style=""><a href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
               <li><a href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span> info@normconf.com</a></li>
