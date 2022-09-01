@@ -32,6 +32,18 @@
         margin-right: auto;
         width: 50%;
       }
+      a:link {
+        color: #4200be;
+      }
+      a:visited {
+        color: #4200be;
+      }
+      a:active {
+        color: #ef028c;
+      }
+      a:hover {
+        color: #ef028c;
+      }
       a.light_link:link{
         color:#ef028c;
       }
@@ -45,10 +57,19 @@
         color: #afafafff;
       }
       a.dark_link:active {
-        color: #10ce0dff;
+        color: #5fffcf;
       }
       a.dark_link:hover {
-        color: #10ce0dff;
+        color: #5fffcf;
+      }
+      a.on_pink:link{
+        color:#5fffcf;
+      }
+      a.on_pink:active {
+        color: #6017af;
+      }
+      a.on_pink:hover {
+        color: #4200be;
       }
       .navbar.is-dark .navbar-end > a.navbar-item:hover{
         background-color: #ef028c;
@@ -217,7 +238,7 @@
     <a id="details"></a>
     <section class="section is-medium m-5" style="background-color: #6017af;">
       <div class="columns is-centered">
-        <div class="column is-3">
+        <div class="column is-narrow">
           <div class="content is-medium">
             <h1 class="title has-text-centered" style=" color: #FFFFFF;">📅 Details 📅</h1>
             <h2 class="subtitle" style=" color: #FFFFFF;">
@@ -391,7 +412,7 @@
             <!-- <h2 class="subtitle">
               Thank you to all of our institutional, corporate, and individual sponsors!
             </h2> -->
-            <p style=" color: #FFFFFF;">For question and info on sponsorship, please contact us at <a href="mailto:sponsorship@normconf.com">sponsorship@normconf.com</a></p>
+            <p style=" color: #FFFFFF;">For question and info on sponsorship, please contact us at <a class="on_pink" href="mailto:sponsorship@normconf.com">sponsorship@normconf.com</a></p>
           </div>
         </div>
       </div>
@@ -455,7 +476,7 @@
                       <td><a href="https://twitter.com/econoben">Ben Labaschin</a></td>
                     </tr>
                     <tr>
-                      <td>Guenia Izquierdo</td>
+                      <td><a href="https://www.linkedin.com/in/guenia/">Guenia Izquierdo</a></td>
                     </tr>
                     <tr>
                       <td><a href="https://twitter.com/jeremyjordan">Jeremy Jordan</a></td>
@@ -476,7 +497,8 @@
     <section class="section is-medium m-5" style="background-color: #5fffcf;">
       <div class="columns is-centered mt-6">
         <a id="contact"></a>
-        <div class="column is-2">
+        <!-- <div class="column is-two-fifths-desktop is-two-fifths-tablet"> -->
+        <div class="column is-narrow has-text-centered">
           <div class="columns is-centered">
             <div class="column">
               <figure class="image is-2by1">
@@ -487,13 +509,22 @@
           <div class="content is-medium">
             <h1 class="title has-text-centered">📠 Contact 📠</h1>
             <ul style="list-style-type: none;">
-              <li style=""><a href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
+              <li><a href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
               <li><a href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span> info@normconf.com</a></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="footer" style="background-color: transparent;">
+      <div class="content has-text-centered">
+        <p>
+          Website by <a href="https://roycoding.com">Roy Keyes</a>. Logo design by <a href="https://barbasboth.com/">Barbara Asboth</a>.
+        </p>
+        <p>© 2022, NormConf</p>
+      </div>
+    </footer>
   </body>
 
 </html>
