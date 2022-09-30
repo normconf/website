@@ -1,107 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Normconf: The Normcore Tech Conference</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Normconf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight"/>
-    <meta property="og:title" content="Normconf" />
-    <meta property="og:url" content="https://normconf.com" />
-    <meta name="og:description" content="Normconf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight"/>
-    <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="normconf.com" />
-    <meta name="twitter:creator" content="@normconf" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link href="fontawesome/css/all.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <style>
-      body {
-        background-image: url('images/background_placeholder.png');
-      }
-      .hero {
-        background-color: None;
-        color: #797979;
-        font-family: sans-serif;
-      }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-      a:link {
-        color: #4200be;
-      }
-      a:visited {
-        color: #4200be;
-      }
-      a:active {
-        color: #ef028c;
-      }
-      a:hover {
-        color: #ef028c;
-      }
-      a.light_link:link{
-        color:#ef028c;
-      }
-      a.light_link:visited{
-        color:#4200be;
-      }
-      a.dark_link:link {
-        color: #FFFFFF;
-      }
-      a.dark_link:visited {
-        color: #afafafff;
-      }
-      a.dark_link:active {
-        color: #5fffcf;
-      }
-      a.dark_link:hover {
-        color: #5fffcf;
-      }
-      a.on_pink:link{
-        color:#5fffcf;
-      }
-      a.on_pink:active {
-        color: #6017af;
-      }
-      a.on_pink:hover {
-        color: #4200be;
-      }
-      .navbar.is-dark .navbar-end > a.navbar-item:hover{
-        background-color: #ef028c;
-      }
-      .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link{
-        background-color: #ef028c;
-      }
-      .navbar.is-dark .navbar-brand > a.navbar-item:hover{
-        background-color: #6017af;
-      }
-      .button.is-danger{
-        background-color: #ef028c;
-      }
-      table.speakers1{
-        font-weight: bold;
-        color: #4200be;
-        width: auto ;
-      }
-      table.speakers2{
-        font-weight: bold;
-        color: #6017af;
-        width: auto ;
-      }
-      </style>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
+
+<head>
+  <title>Normconf: The Normcore Tech Conference</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Normconf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight" />
+  <meta property="og:title" content="Normconf" />
+  <meta property="og:url" content="https://normconf.com" />
+  <meta name="og:description"
+    content="Normconf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight" />
+  <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="normconf.com" />
+  <meta name="twitter:creator" content="@normconf" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background-image: url('images/background_placeholder.png');
+    }
+
+    .hero {
+      background-color: None;
+      color: #797979;
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    a:link {
+      color: #4200be;
+    }
+
+    a:visited {
+      color: #4200be;
+    }
+
+    a:active {
+      color: #ef028c;
+    }
+
+    a:hover {
+      color: #ef028c;
+    }
+
+    a.light_link:link {
+      color: #ef028c;
+    }
+
+    a.light_link:visited {
+      color: #4200be;
+    }
+
+    a.dark_link:link {
+      color: #FFFFFF;
+    }
+
+    a.dark_link:visited {
+      color: #afafafff;
+    }
+
+    a.dark_link:active {
+      color: #5fffcf;
+    }
+
+    a.dark_link:hover {
+      color: #5fffcf;
+    }
+
+    a.on_pink:link {
+      color: #5fffcf;
+    }
+
+    a.on_pink:active {
+      color: #6017af;
+    }
+
+    a.on_pink:hover {
+      color: #4200be;
+    }
+
+    .navbar.is-dark .navbar-end>a.navbar-item:hover {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-brand>a.navbar-item:hover {
+      background-color: #6017af;
+    }
+
+    .button.is-danger {
+      background-color: #ef028c;
+    }
+
+    table.speakers1 {
+      font-weight: bold;
+      color: #4200be;
+      width: auto;
+    }
+
+    table.speakers2 {
+      font-weight: bold;
+      color: #6017af;
+      width: auto;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
 
       // Get all "navbar-burger" elements
       const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
       // Add a click event on each of them
-      $navbarBurgers.forEach( el => {
+      $navbarBurgers.forEach(el => {
         el.addEventListener('click', () => {
 
           // Get the target from the "data-target" attribute
@@ -115,76 +139,82 @@
         });
       });
 
-      });
-    </script>
-    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    });
+  </script>
+  <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-    <script type="text/javascript">
-        var exampleCallback = function() {
-            console.log('Order complete!');
-        };
-    
-        window.EBWidgets.createWidget({
-            widgetType: 'checkout',
-            eventId: '403819644427',
-            modal: true,
-            modalTriggerElementId: 'eventbrite-widget-modal-trigger-403819644427',
-            onOrderComplete: exampleCallback
-        });
-    </script>
-  </head>
-  <body>
-    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation" style="background-color: #4200beff; color: #FFFFFF;">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://normconf.com">
-          <img src="images/logo_navbar.png" height="40">
+  <script type="text/javascript">
+    var exampleCallback = function () {
+      console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+      widgetType: 'checkout',
+      eventId: '403819644427',
+      modal: true,
+      modalTriggerElementId: 'eventbrite-widget-modal-trigger-403819644427',
+      onOrderComplete: exampleCallback
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation"
+    style="background-color: #4200beff; color: #FFFFFF;">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://normconf.com">
+        <img src="images/logo_navbar.png" height="40">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNormConf">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarNormConf" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#details">
+          Details
         </a>
-    
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNormConf">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+
+        <a class="navbar-item" href="#register">
+          Register
         </a>
-      </div>
 
-      <div id="navbarNormConf" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item" href="#details">
-            Details
+        <a class="navbar-item" href="#speakers">
+          Speakers
+        </a>
+
+        <a class="navbar-item" href="#schedule">
+          Schedule
+        </a>
+
+        <a class="navbar-item" href="#sponsors">
+          Sponsors
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
           </a>
 
-          <a class="navbar-item" href="#register">
-            Register
-          </a>
-
-          <a class="navbar-item" href="#speakers">
-            Speakers
-          </a>
-
-          <a class="navbar-item" href="#sponsors">
-            Sponsors
-          </a>
-    
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#about">
+              About
             </a>
-    
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">
-                About
-              </a>
-              <a class="navbar-item" href="#sponsors">
-                Sponsor
-              </a>
-              <a class="navbar-item" href="#contact">
-                Contact
-              </a>
-            </div>
+            <a class="navbar-item" href="#sponsors">
+              Sponsor
+            </a>
+            <a class="navbar-item" href="#contact">
+              Contact
+            </a>
           </div>
         </div>
-    
-        <!-- <div class="navbar-end">
+      </div>
+
+      <!-- <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
               <a class="button is-primary">
@@ -196,107 +226,120 @@
             </div>
           </div>
         </div> -->
-      </div>
-    </nav>
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="columns is-centered">
-            <div class="column is-10">
-              <figure class="image is-2by1">
-                <img src="images/normconf_banner.png" alt="NormConf: The Normcore Tech Conference"/>
-              </figure>
-              <p><h2 class="title is-2">Yes, it's really happening!</h2></p>
+    </div>
+  </nav>
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="columns is-centered">
+          <div class="column is-10">
+            <figure class="image is-2by1">
+              <img src="images/normconf_banner.png" alt="NormConf: The Normcore Tech Conference" />
+            </figure>
+            <p>
+            <h2 class="title is-2">Yes, it's really happening!</h2>
+            </p>
+          </div>
+        </div>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="box" style="padding: 0.2rem;">
+              <a href="https://twitter.com/vboykis/status/1552066833582276610"><img src="images/vicki_tweet.png"
+                  width="400"></a>
             </div>
           </div>
-          <div class="columns is-vcentered">
-            <div class="column">
-              <div class="box" style="padding: 0.2rem;">
-                <a href="https://twitter.com/vboykis/status/1552066833582276610"><img src="images/vicki_tweet.png" width="400"></a>
-              </div>
-            </div>
-            <div class="column is-6">
-              <p><h2 class="subtitle is-2">2022-12-15</h2></p>
-              <p><h2 class="subtitle is-2">Online</h2></p>
-            </div>
-            <div class="column">
-              <img src="images/its_happening.webp" width="400">
-            </div>
+          <div class="column is-6">
+            <p>
+            <h2 class="subtitle is-2">2022-12-15</h2>
+            </p>
+            <p>
+            <h2 class="subtitle is-2">Online</h2>
+            </p>
+          </div>
+          <div class="column">
+            <img src="images/its_happening.webp" width="400">
           </div>
         </div>
       </div>
-      <div class="hero-footer">
-        <nav class="tabs is-fullwidth">
-          <div class="container">
-            <ul>
-              <li><a class="light_link" href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
-              <li><a class="light_link" href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span> info@normconf.com</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </section>
+    </div>
+    <div class="hero-footer">
+      <nav class="tabs is-fullwidth">
+        <div class="container">
+          <ul>
+            <li><a class="light_link" href="https://twitter.com/normconf"><span class="icon"><i
+                    class="fab fa-twitter"></i></span> @normconf</a></li>
+            <li><a class="light_link" href="mailto:info@normconf.com"><span class="icon"><i
+                    class="fas fa-envelope"></i></span> info@normconf.com</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
 
-    <a id="details"></a>
-    <section class="section is-medium m-5" style="background-color: #6017af;">
-      <div class="columns is-centered">
-        <div class="column is-narrow">
-          <div class="content is-medium">
-            <h1 class="title has-text-centered" style=" color: #FFFFFF;">📅 Details 📅</h1>
-            <h2 class="subtitle" style=" color: #FFFFFF;">
-              <ul style="list-style-image: url('images/list_bullet.png');">
+  <a id="details"></a>
+  <section class="section is-medium m-5" style="background-color: #6017af;">
+    <div class="columns is-centered">
+      <div class="column is-narrow">
+        <div class="content is-medium">
+          <h1 class="title has-text-centered" style=" color: #FFFFFF;">📅 Details 📅</h1>
+          <h2 class="subtitle" style=" color: #FFFFFF;">
+            <ul style="list-style-image: url('images/list_bullet.png');">
               <li>Thursday, 15 Dec 2022</li>
               <li>Online</li>
               <li>Cost: <a style=" color: #ef028c;" href="https://normconf.eventbrite.ca">FREE</a></li>
               <li>12:30 UTC - 04:00 UTC</li>
               <li>07:30 EST - 23:00 EST</li>
               <li>Full schedule TBA</li>
-              </ul>
-            </h2>
-          </div>
+            </ul>
+          </h2>
         </div>
       </div>
+    </div>
 
-      <a id="register"></a>
-      <div class="columns is-centered mt-6">
-        <div class="column is-4 has-text-centered">
-          <div class="content is-medium">
-            <h1 class="title" style=" color: #FFFFFF;">🎫 Register 🎫</h1>
-            <!-- <h3>Register for free <a href="https://normconf.eventbrite.ca">HERE ⬅️⬅️⬅️</a></h3> -->
-            <!-- Noscript content for added SEO -->
-          <noscript><a href="https://normconf.eventbrite.ca" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+    <a id="register"></a>
+    <div class="columns is-centered mt-6">
+      <div class="column is-4 has-text-centered">
+        <div class="content is-medium">
+          <h1 class="title" style=" color: #FFFFFF;">🎫 Register 🎫</h1>
+          <!-- <h3>Register for free <a href="https://normconf.eventbrite.ca">HERE ⬅️⬅️⬅️</a></h3> -->
+          <!-- Noscript content for added SEO -->
+          <noscript><a href="https://normconf.eventbrite.ca" rel="noopener noreferrer" target="_blank">Buy Tickets on
+              Eventbrite</a></noscript>
           <!-- You can customize this button any way you like -->
-          <button id="eventbrite-widget-modal-trigger-403819644427" type="button" class="button is-large is-danger m-5">REGISTER FREE</button>
-          <p style=" color: #FFFFFF;">All (optional) donations go to support <a style=" color: #ef028c;" href="https://numfocus.org/">NumFOCUS</a>.</p>
-          </div>
+          <button id="eventbrite-widget-modal-trigger-403819644427" type="button"
+            class="button is-large is-danger m-5">REGISTER FREE</button>
+          <p style=" color: #FFFFFF;">All (optional) donations go to support <a style=" color: #ef028c;"
+              href="https://numfocus.org/">NumFOCUS</a>.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section is-medium m-5">
-      <a id="speakers"></a>
-      <div class="columns is-centered mt-6">
-        <div class="column is-three-quarters">
-          <div class="content is-medium">
-            <h1 class="title has-text-centered">🎤 Speakers 🎤</h1>
-            <p>We are assembling a great lineup of speakers to talk about the most Normcore topics in data, machine learning, and tech. The stuff that matters.</p>
-            <div class="columns is-mobile is-centered has-text-centered is-multiline">
-              <div class="column is-narrow">
-                <table class="speakers1">
-                  <tbody>
+  <section class="section is-medium m-5">
+    <a id="speakers"></a>
+    <div class="columns is-centered mt-6">
+      <div class="column is-three-quarters">
+        <div class="content is-medium">
+          <h1 class="title has-text-centered">🎤 Speakers 🎤</h1>
+          <p>We are assembling a great lineup of speakers to talk about the most Normcore topics in data, machine
+            learning, and tech. The stuff that matters.</p>
+          <div class="columns is-mobile is-centered has-text-centered is-multiline">
+            <div class="column is-narrow">
+              <table class="speakers1">
+                <tbody>
                   <tr>
                     <td>
                       <article class="media" style="align-items: center;">
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/vboykis">
-                              <img  class="is-rounded" src="images/speakers/vicki_boykis.jpg" alt="Vicki Boykis">
+                              <img class="is-rounded" src="images/speakers/vicki_boykis.jpg" alt="Vicki Boykis">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/vboykis">Vicki Boykis</a>
+                            <a href="https://twitter.com/vboykis">Vicki Boykis</a>
                           </div>
                         </div>
                       </article>
@@ -308,13 +351,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/fishnets88">
-                              <img  class="is-rounded" src="images/speakers/vincent_d_warmerdam_400x400.jpg" alt="Vincent D. Warmerdam">
+                              <img class="is-rounded" src="images/speakers/vincent_d_warmerdam_400x400.jpg"
+                                alt="Vincent D. Warmerdam">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/fishnets88">Vincent D. Warmerdam</a>
+                            <a href="https://twitter.com/fishnets88">Vincent D. Warmerdam</a>
                           </div>
                         </div>
                       </article>
@@ -326,13 +370,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/tdhopper">
-                              <img  class="is-rounded" src="images/speakers/tim_hopper_400x400.jpg" alt="Tim Hopper">
+                              <img class="is-rounded" src="images/speakers/tim_hopper_400x400.jpg" alt="Tim Hopper">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/tdhopper">Tim Hopper</a>
+                            <a href="https://twitter.com/tdhopper">Tim Hopper</a>
                           </div>
                         </div>
                       </article>
@@ -344,13 +388,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/arnicas">
-                              <img  class="is-rounded" src="images/speakers/lynn_cherny_400x400.jpg" alt="Lynn Cherny">
+                              <img class="is-rounded" src="images/speakers/lynn_cherny_400x400.jpg" alt="Lynn Cherny">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/arnicas">Lynn Cherny</a>
+                            <a href="https://twitter.com/arnicas">Lynn Cherny</a>
                           </div>
                         </div>
                       </article>
@@ -362,13 +406,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/MatthijsBrs">
-                              <img  class="is-rounded" src="images/speakers/matthjis_brouns_400x400.png" alt="Matthjis Brouns">
+                              <img class="is-rounded" src="images/speakers/matthjis_brouns_400x400.png"
+                                alt="Matthjis Brouns">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/MatthijsBrs">Matthjis Brouns</a>
+                            <a href="https://twitter.com/MatthijsBrs">Matthjis Brouns</a>
                           </div>
                         </div>
                       </article>
@@ -380,7 +425,8 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://www.linkedin.com/in/guenia/">
-                              <img  class="is-rounded" src="images/speakers/guenia_izquierdo_400x400.jpeg" alt="Guenia Izquierdo">
+                              <img class="is-rounded" src="images/speakers/guenia_izquierdo_400x400.jpeg"
+                                alt="Guenia Izquierdo">
                             </a>
                           </figure>
                         </div>
@@ -398,13 +444,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/CMastication">
-                              <img  class="is-rounded" src="images/speakers/jd_long_400x400.jpg" alt="JD Long">
+                              <img class="is-rounded" src="images/speakers/jd_long_400x400.jpg" alt="JD Long">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/CMastication">JD Long</a>
+                            <a href="https://twitter.com/CMastication">JD Long</a>
                           </div>
                         </div>
                       </article>
@@ -416,37 +462,38 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/NeuralBricolage">
-                              <img  class="is-rounded" src="images/speakers/helena_sarin_400x400.jpg" alt="Helena Sarin">
+                              <img class="is-rounded" src="images/speakers/helena_sarin_400x400.jpg" alt="Helena Sarin">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/NeuralBricolage">Helena Sarin</a>
+                            <a href="https://twitter.com/NeuralBricolage">Helena Sarin</a>
                           </div>
                         </div>
                       </article>
                     </td>
                   </tr>
-                  <tbody>
-                </table>
-              </div>
-              <div class="column is-narrow">
-                <table class="speakers2">
-                  <tbody>
+                <tbody>
+              </table>
+            </div>
+            <div class="column is-narrow">
+              <table class="speakers2">
+                <tbody>
                   <tr>
                     <td>
                       <article class="media" style="align-items: center;">
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/blackaryz">
-                              <img  class="is-rounded" src="images/speakers/zachary_blackwood.jpg" alt="Zachary Blackwood">
+                              <img class="is-rounded" src="images/speakers/zachary_blackwood.jpg"
+                                alt="Zachary Blackwood">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/blackaryz">Zachary Blackwood</a>
+                            <a href="https://twitter.com/blackaryz">Zachary Blackwood</a>
                           </div>
                         </div>
                       </article>
@@ -458,13 +505,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/joelgrus">
-                              <img  class="is-rounded" src="images/speakers/joel_grus_400x400.jpg" alt="Joel Grus">
+                              <img class="is-rounded" src="images/speakers/joel_grus_400x400.jpg" alt="Joel Grus">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/joelgrus">Joel Grus</a>
+                            <a href="https://twitter.com/joelgrus">Joel Grus</a>
                           </div>
                         </div>
                       </article>
@@ -476,13 +523,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/psobot">
-                              <img  class="is-rounded" src="images/speakers/peter_sobot_400x400.jpg" alt="Peter Sobot">
+                              <img class="is-rounded" src="images/speakers/peter_sobot_400x400.jpg" alt="Peter Sobot">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/psobot">Peter Sobot</a>
+                            <a href="https://twitter.com/psobot">Peter Sobot</a>
                           </div>
                         </div>
                       </article>
@@ -494,13 +541,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/jeremyjordan">
-                              <img  class="is-rounded" src="images/speakers/jeremy_jordan.png" alt="Jeremy Jordan">
+                              <img class="is-rounded" src="images/speakers/jeremy_jordan.png" alt="Jeremy Jordan">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/jeremyjordan">Jeremy Jordan</a>
+                            <a href="https://twitter.com/jeremyjordan">Jeremy Jordan</a>
                           </div>
                         </div>
                       </article>
@@ -512,13 +559,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/sh_reya">
-                              <img  class="is-rounded" src="images/speakers/shreya_shankar_1200x1200.png" alt="Shreya Shankar">
+                              <img class="is-rounded" src="images/speakers/shreya_shankar_1200x1200.png"
+                                alt="Shreya Shankar">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/sh_reya">Shreya Shankar</a>
+                            <a href="https://twitter.com/sh_reya">Shreya Shankar</a>
                           </div>
                         </div>
                       </article>
@@ -530,13 +578,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/Jowanza">
-                              <img  class="is-rounded" src="images/speakers/jowanza_joseph_1000x1000.jpg" alt="Jowanza Joseph">
+                              <img class="is-rounded" src="images/speakers/jowanza_joseph_1000x1000.jpg"
+                                alt="Jowanza Joseph">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/Jowanza">Jowanza Joseph</a>
+                            <a href="https://twitter.com/Jowanza">Jowanza Joseph</a>
                           </div>
                         </div>
                       </article>
@@ -548,13 +597,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/eprosenthal">
-                              <img  class="is-rounded" src="images/speakers/ethan_rosenthal_400x400.jpg" alt="Ethan Rosenthal">
+                              <img class="is-rounded" src="images/speakers/ethan_rosenthal_400x400.jpg"
+                                alt="Ethan Rosenthal">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/eprosenthal">Ethan Rosenthal</a>
+                            <a href="https://twitter.com/eprosenthal">Ethan Rosenthal</a>
                           </div>
                         </div>
                       </article>
@@ -566,37 +616,37 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/roycoding">
-                              <img  class="is-rounded" src="images/speakers/roycoding_400x400.jpg" alt="Roy K">
+                              <img class="is-rounded" src="images/speakers/roycoding_400x400.jpg" alt="Roy K">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/roycoding">Roy Keyes</a>
+                            <a href="https://twitter.com/roycoding">Roy Keyes</a>
                           </div>
                         </div>
                       </article>
                     </td>
                   </tr>
-                  <tbody>
-                </table>
-              </div>
-              <div class="column is-narrow">
-                <table class="speakers1">
-                  <tbody>
+                <tbody>
+              </table>
+            </div>
+            <div class="column is-narrow">
+              <table class="speakers1">
+                <tbody>
                   <tr>
                     <td>
                       <article class="media" style="align-items: center;">
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/rhianelaine">
-                              <img  class="is-rounded" src="images/speakers/rhian_thomas_400x400.png" alt="Rhian Thomas">
+                              <img class="is-rounded" src="images/speakers/rhian_thomas_400x400.png" alt="Rhian Thomas">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/rhianelaine">Rhian Thomas</a>
+                            <a href="https://twitter.com/rhianelaine">Rhian Thomas</a>
                           </div>
                         </div>
                       </article>
@@ -608,13 +658,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/beeonaposy">
-                              <img  class="is-rounded" src="images/speakers/caitlin_hudon_400x400.png" alt="Caitlin Hudon">
+                              <img class="is-rounded" src="images/speakers/caitlin_hudon_400x400.png"
+                                alt="Caitlin Hudon">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/beeonaposy">Caitlin Hudon</a>
+                            <a href="https://twitter.com/beeonaposy">Caitlin Hudon</a>
                           </div>
                         </div>
                       </article>
@@ -626,13 +677,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/seanjtaylor">
-                              <img  class="is-rounded" src="images/speakers/sean_taylor_400x400.jpg" alt="Sean Taylor">
+                              <img class="is-rounded" src="images/speakers/sean_taylor_400x400.jpg" alt="Sean Taylor">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/seanjtaylor">Sean Taylor</a>
+                            <a href="https://twitter.com/seanjtaylor">Sean Taylor</a>
                           </div>
                         </div>
                       </article>
@@ -644,13 +695,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/__lucab">
-                              <img  class="is-rounded" src="images/speakers/lucab_400x400.jpg" alt="Luca Belli">
+                              <img class="is-rounded" src="images/speakers/lucab_400x400.jpg" alt="Luca Belli">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/__lucab">Luca Belli</a>
+                            <a href="https://twitter.com/__lucab">Luca Belli</a>
                           </div>
                         </div>
                       </article>
@@ -662,13 +713,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/EconoBen">
-                              <img  class="is-rounded" src="images/speakers/ben_labaschin_400x400.jpg" alt="Ben Labaschin">
+                              <img class="is-rounded" src="images/speakers/ben_labaschin_400x400.jpg"
+                                alt="Ben Labaschin">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/EconoBen">Ben Labaschin</a>
+                            <a href="https://twitter.com/EconoBen">Ben Labaschin</a>
                           </div>
                         </div>
                       </article>
@@ -680,13 +732,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/Jiminy_Kirket">
-                              <img  class="is-rounded" src="images/speakers/james_kirk.jpg" alt="James Kirk">
+                              <img class="is-rounded" src="images/speakers/james_kirk.jpg" alt="James Kirk">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/Jiminy_Kirket">James Kirk</a>
+                            <a href="https://twitter.com/Jiminy_Kirket">James Kirk</a>
                           </div>
                         </div>
                       </article>
@@ -698,13 +750,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/juliasilge">
-                              <img  class="is-rounded" src="images/speakers/julia_silge.jpeg" alt="Julia Silge">
+                              <img class="is-rounded" src="images/speakers/julia_silge.jpeg" alt="Julia Silge">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/juliasilge">Julia Silge</a>
+                            <a href="https://twitter.com/juliasilge">Julia Silge</a>
                           </div>
                         </div>
                       </article>
@@ -716,37 +768,38 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/_brohrer_">
-                              <img  class="is-rounded" src="images/speakers/brandon_rohrer.jpg" alt="Brandon Rohrer">
+                              <img class="is-rounded" src="images/speakers/brandon_rohrer.jpg" alt="Brandon Rohrer">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/_brohrer_">Brandon Rohrer</a>
+                            <a href="https://twitter.com/_brohrer_">Brandon Rohrer</a>
                           </div>
                         </div>
                       </article>
                     </td>
                   </tr>
-                  <tbody>
-                </table>
-              </div>
-              <div class="column is-narrow">
-                <table class="speakers2">
-                  <tbody>
+                <tbody>
+              </table>
+            </div>
+            <div class="column is-narrow">
+              <table class="speakers2">
+                <tbody>
                   <tr>
                     <td>
                       <article class="media" style="align-items: center;">
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/pmbaumgartner">
-                              <img  class="is-rounded" src="images/speakers/peter_baumgartner_400x400.jpg" alt="Peter Baumgartner">
+                              <img class="is-rounded" src="images/speakers/peter_baumgartner_400x400.jpg"
+                                alt="Peter Baumgartner">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/pmbaumgartner">Peter Baumgartner</a>
+                            <a href="https://twitter.com/pmbaumgartner">Peter Baumgartner</a>
                           </div>
                         </div>
                       </article>
@@ -758,13 +811,14 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/fossilosophy">
-                              <img  class="is-rounded" src="images/speakers/brianna_mchorse_1512x1512.jpeg" alt="Brianna McHorse">
+                              <img class="is-rounded" src="images/speakers/brianna_mchorse_1512x1512.jpeg"
+                                alt="Brianna McHorse">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/fossilosophy">Brianna McHorse</a>
+                            <a href="https://twitter.com/fossilosophy">Brianna McHorse</a>
                           </div>
                         </div>
                       </article>
@@ -776,13 +830,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/imightbemary">
-                              <img  class="is-rounded" src="images/speakers/katie_bauer_400x400.jpg" alt="Katie Bauer">
+                              <img class="is-rounded" src="images/speakers/katie_bauer_400x400.jpg" alt="Katie Bauer">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/imightbemary">Katie Bauer</a>
+                            <a href="https://twitter.com/imightbemary">Katie Bauer</a>
                           </div>
                         </div>
                       </article>
@@ -794,13 +848,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/j_houg">
-                              <img  class="is-rounded" src="images/speakers/juliet_hougland.jpeg" alt="Juliet Hougland">
+                              <img class="is-rounded" src="images/speakers/juliet_hougland.jpeg" alt="Juliet Hougland">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/j_houg">Juliet Hougland</a>
+                            <a href="https://twitter.com/j_houg">Juliet Hougland</a>
                           </div>
                         </div>
                       </article>
@@ -812,13 +866,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/josh_wills">
-                              <img  class="is-rounded" src="images/speakers/josh_wills_400x400.jpeg" alt="Josh Wills">
+                              <img class="is-rounded" src="images/speakers/josh_wills_400x400.jpeg" alt="Josh Wills">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/josh_wills">Josh Wills</a>
+                            <a href="https://twitter.com/josh_wills">Josh Wills</a>
                           </div>
                         </div>
                       </article>
@@ -830,13 +884,13 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/rose_w">
-                              <img  class="is-rounded" src="images/speakers/rose_wiegley_400x400.png" alt="Rose Wiegley">
+                              <img class="is-rounded" src="images/speakers/rose_wiegley_400x400.png" alt="Rose Wiegley">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/rose_w">Rose Wiegley</a>
+                            <a href="https://twitter.com/rose_w">Rose Wiegley</a>
                           </div>
                         </div>
                       </article>
@@ -848,340 +902,629 @@
                         <div class="media-left">
                           <figure class="image is-32x32" style="margin-right: 0;">
                             <a href="https://twitter.com/chrisalbon">
-                              <img  class="is-rounded" src="images/speakers/chris_albon_400x400.jpg" alt="Chris Albon">
+                              <img class="is-rounded" src="images/speakers/chris_albon_400x400.jpg" alt="Chris Albon">
                             </a>
                           </figure>
                         </div>
                         <div class="media-content" style="flex-grow: 0;">
                           <div class="content">
-                              <a href="https://twitter.com/chrisalbon">Chris Albon</a>
+                            <a href="https://twitter.com/chrisalbon">Chris Albon</a>
                           </div>
                         </div>
                       </article>
                     </td>
                   </tr>
-                  <tbody>
-                </table>
-              </div>
+                <tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <a id="sponsors"></a>
-    <section class="section is-medium m-5" style="background-color: #ef028c;">
-      <div class="columns is-centered">
-        <div class="column is-6 has-text-centered">
-          <div class="content is-medium">
-            <h1 class="title" style=" color: #FFFFFF;">💰 Sponsors 💰</h1>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-variable is-8 mt-6">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <h3 class="subtitle" style=" color: #FFFFFF;">🏆 Platinum Sponsors</h3>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://intuitivebayes.com"><img src="images/intuitive_bayes_logo_3x1.png" width="300px" alt="Intuitive Bayes"></a>
-            </figure>
-          </div>
-        </div>
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://prefect.io"><img src="images/prefect-logo-gradient-navy_3x1.png" width="300px" alt="Prefect"></a>
-            </figure>
-          </div>
-        </div>
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://anomalo.com"><img src="images/anomalo_3by1.png" width="300px" alt="Anomalo"></a>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-variable is-8 mt-6">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <h3 class="subtitle" style=" color: #FFFFFF;">🥇 Gold Sponsors</h3>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://neptune.ai/"><img src="images/neptune_ai_blue_horizontal_3x1.png" width="300px" alt="neptune.ai"></a>
-            </figure>
-          </div>
-        </div>
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://iterative.ai/"><img src="images/iterative_3by1.png" width="300px" alt="iterative"></a>
-            </figure>
-          </div>
-        </div>
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://dagshub.com"><img src="images/dagshub_3by1.png" width="300px" alt="DAGsHub"></a>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://lambdalabs.com/"><img src="images/Lambda_3by1.png" width="300px" alt="Lambda"></a>
-            </figure>
-          </div>
-        </div>
+  <a id="schedule"></a>
+  <section class="section is-medium m-5" style="background-color: #5fffcf;">
+    <div class="columns is-centered mt-6">
+      <div class="content is-medium">
+        <h1 class="title has-text-centered">📠 Schedule 📠</h1>
       </div>
 
 
-      <div class="columns is-centered is-variable is-8 mt-6">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <h3 class="subtitle" style=" color: #FFFFFF;">🥈 Silver Sponsors</h3>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-2by1" style="margin-top: 0;">
-              <a href="https://www.jumpingrivers.com/"><img src="images/Jumping_Rivers_logo_dark_2x1.png" width="300px" alt="Jumping Rivers Ltd"></a>
-            </figure>
-          </div>
-        </div>
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-1by1" style="margin-top: 0;">
-              <a href="https://sticker.space"><img src="images/sticker_space_logo.png" width="150px" alt="sticker.space"></a>
-            </figure>
-          </div>
-        </div>
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://www.pinnacle21.com/"><img src="images/pinnacle21_3x1.png" width="300px" alt="Pinnacle 21"></a>
-            </figure>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://www.routledge.com/"><img src="images/CRC_Press_logo_3by1.png" width="300px" alt="CRC Press, Taylor and Francis Group"></a>
-            </figure>
-          </div>
-        </div>
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <figure class="is-1by1" style="margin-top: 0;">
-              <a href="https://trovbase.com/"><img src="images/Trovbase_Horizontal.png" width="150px" alt="TrovBase"></a>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-variable is-8 mt-6">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <h3 class="title" style=" color: #FFFFFF;">🥉 Bronze Sponsor</h3>
-            <figure class="is-3by1" style="margin-top: 0;">
-              <a href="https://zefsguides.com"><img src="images/zefs_guides_logo.png" width="300px" alt="Zefs Guides"></a>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered is-variable is-8 mt-6">
-        <div class="column has-text-centered is-narrow">
-          <div class="content is-medium">
-            <h2 class="title" style=" color: #FFFFFF;">🏅 Individual Sponsors</h2>
-              <article class="media" style="align-items: center;">
-                <div class="media-left">
-                  <figure class="image is-64x64" style="margin-right: 0;">
-                    <a href="https://twitter.com/nick_canz">
-                      <img  class="is-rounded" src="images/nick_canz_400x400.jpg" alt="Nick Canzoneri">
-                    </a>
-                  </figure>
-                </div>
-                <div class="media-content" style="flex-grow: 0;">
-                  <div class="content">
-                    <h3 style="margin-bottom: 0;">
-                      <a class="on_pink" href="https://twitter.com/nick_canz">Nick Canzoneri</a>
-                    </h3>
-                  </div>
-                </div>
-              </article>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-centered mt-6">
-        <div class="column is-6 has-text-centered">
-          <div class="content is-medium">
-            <p style=" color: #FFFFFF;">For question and info on sponsorship, please contact us at <a class="on_pink" href="mailto:sponsorship@normconf.com">sponsorship@normconf.com</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+    <table border="1" cellpadding="2" cellspacing="0">
+      <tr style="font-weight: bold; background-color: #aaa;">
+        <td>UTC</td>
+        <td>EST</td>
+        <td>PDT</td>
+        <td>JST</td>
+        <td>Speaker</td>
+        <td>Talk Title</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>12:30 PM</td>
+        <td>7:30 AM</td>
+        <td>4:30 AM</td>
+        <td>9:30 PM</td>
+        <td>Vicki Boykis</td>
+        <td>Keynote</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>1:00 PM</td>
+        <td>8:00 AM</td>
+        <td>5:00 AM</td>
+        <td>10:00 PM</td>
+        <td>Vincent Warmerdam</td>
+        <td>Group-By statements that save the day</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>1:30 PM</td>
+        <td>8:30 AM</td>
+        <td>5:30 AM</td>
+        <td>10:30 PM</td>
+        <td>Tim Hopper</td>
+        <td>Five Semesters of Linear Algebra and All I do is Solve Python Dependency Problems</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>2:00 PM</td>
+        <td>9:00 AM</td>
+        <td>6:00 AM</td>
+        <td>11:00 PM</td>
+        <td>Lynn Cherny</td>
+        <td>Deduping Data for Norms</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>2:30 PM</td>
+        <td>9:30 AM</td>
+        <td>6:30 AM</td>
+        <td>11:30 PM</td>
+        <td>Matthijs Brouns</td>
+        <td>How small can I get that Docker container?</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>3:00 PM</td>
+        <td>10:00 AM</td>
+        <td>7:00 AM</td>
+        <td>12:00 AM</td>
+        <td>Guenia Izquierdo</td>
+        <td>Spark Horror Stories from the Field</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>3:30 PM</td>
+        <td>10:30 AM</td>
+        <td>7:30 AM</td>
+        <td>12:30 AM</td>
+        <td>JD Long</td>
+        <td>I&#39;d have written a shorter solution but I didn&#39;t have the time</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>4:00 PM</td>
+        <td>11:00 AM</td>
+        <td>8:00 AM</td>
+        <td>1:00 AM</td>
+        <td>Helena Sarin</td>
+        <td>Transformer Is All You Need: how DL turned a hardcore sw architect into a full-time artist</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>4:30 PM</td>
+        <td>11:30 AM</td>
+        <td>8:30 AM</td>
+        <td>1:30 AM</td>
+        <td>Zachary Blackwood</td>
+        <td>Hack your way to a better API</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>5:00 PM</td>
+        <td>12:00 PM</td>
+        <td>9:00 AM</td>
+        <td>2:00 AM</td>
+        <td>Joel Grus</td>
+        <td>What&#39;s the simplest possible thing that might work, and why didn&#39;t you try that first?</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>5:30 PM</td>
+        <td>12:30 PM</td>
+        <td>9:30 AM</td>
+        <td>2:30 AM</td>
+        <td>Peter Sobot</td>
+        <td>It&#39;s All About Cost: How to Think about Machine Learning Products</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>6:00 PM</td>
+        <td>1:00 PM</td>
+        <td>10:00 AM</td>
+        <td>3:00 AM</td>
+        <td>Jeremy Jordan</td>
+        <td>Threat detection systems, not just threat detection models</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>6:30 PM</td>
+        <td>1:30 PM</td>
+        <td>10:30 AM</td>
+        <td>3:30 AM</td>
+        <td>Shreya Shankar</td>
+        <td>All my machine learning problems are actually data management problems</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>7:00 PM</td>
+        <td>2:00 PM</td>
+        <td>11:00 AM</td>
+        <td>4:00 AM</td>
+        <td>Jowanza Joseph</td>
+        <td>Three Cheers for OpenAPI 3 </td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>7:30 PM</td>
+        <td>2:30 PM</td>
+        <td>11:30 AM</td>
+        <td>4:30 AM</td>
+        <td>Ethan Rosenthal</td>
+        <td>Ethan Rosenthal and the M1 Misadventure</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>8:00 PM</td>
+        <td>3:00 PM</td>
+        <td>12:00 PM</td>
+        <td>5:00 AM</td>
+        <td>Peter Baumgartner</td>
+        <td>What can professional coffee tasting teach us about labeling data?</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>8:30 PM</td>
+        <td>3:30 PM</td>
+        <td>12:30 PM</td>
+        <td>5:30 AM</td>
+        <td>Luca Belli</td>
+        <td>Geriatric Data Science: Life after Senior</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>9:00 PM</td>
+        <td>4:00 PM</td>
+        <td>1:00 PM</td>
+        <td>6:00 AM</td>
+        <td>Caitlin Hudon</td>
+        <td>Tracer Bullets + Working Backwards: Simple Framework for Solving Problems</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>9:30 PM</td>
+        <td>4:30 PM</td>
+        <td>1:30 PM</td>
+        <td>6:30 AM</td>
+        <td>Sean Taylor</td>
+        <td>When not to use SQL</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>10:00 PM</td>
+        <td>5:00 PM</td>
+        <td>2:00 PM</td>
+        <td>7:00 AM</td>
+        <td>Coffee/Nutella Break</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>10:30 PM</td>
+        <td>5:30 PM</td>
+        <td>2:30 PM</td>
+        <td>7:30 AM</td>
+        <td>Ben Labaschin</td>
+        <td>Why Aren&#39;t You Treating Diagrams As Critical Infrastructure Yet?</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>11:00 PM</td>
+        <td>6:00 PM</td>
+        <td>3:00 PM</td>
+        <td>8:00 AM</td>
+        <td>James Kirk</td>
+        <td>Data&#39;s Desire Paths: Shortcuts and lessons from industrial recommender systems</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>11:30 PM</td>
+        <td>6:30 PM</td>
+        <td>3:30 PM</td>
+        <td>8:30 AM</td>
+        <td>Julia Silge</td>
+        <td>How many folds is too many? Efficient simulation for everyday ML decisions</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>12:00 AM</td>
+        <td>7:00 PM</td>
+        <td>4:00 PM</td>
+        <td>9:00 AM</td>
+        <td>Brandon Rohrer</td>
+        <td>The Zen of Tedium</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>12:30 AM</td>
+        <td>7:30 PM</td>
+        <td>4:30 PM</td>
+        <td>9:30 AM</td>
+        <td>Roy Keyes</td>
+        <td>Data Ethics. The non-sexy parts.</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>1:00 AM</td>
+        <td>8:00 PM</td>
+        <td>5:00 PM</td>
+        <td>10:00 AM</td>
+        <td>Brianna McHorse</td>
+        <td>How should I represent the intermediate thing? Python data objects for normcore ML</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>1:30 AM</td>
+        <td>8:30 PM</td>
+        <td>5:30 PM</td>
+        <td>10:30 AM</td>
+        <td>Katie Bauer</td>
+        <td>How to Translate to PM Speak and Back</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>2:00 AM</td>
+        <td>9:00 PM</td>
+        <td>6:00 PM</td>
+        <td>11:00 AM</td>
+        <td>Juliet Hougland</td>
+        <td>The Physics of Data: what is slow, what is fast, how it translates into chosing what to do/what systems to
+          use</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>2:30 AM</td>
+        <td>9:30 PM</td>
+        <td>6:30 PM</td>
+        <td>11:30 AM</td>
+        <td>Josh Wills</td>
+        <td>Just Use One Big Machine For Model Training and Inference</td>
+      </tr>
+      <tr style="background-color: #ffffff">
+        <td>3:00 AM</td>
+        <td>10:00 PM</td>
+        <td>7:00 PM</td>
+        <td>12:00 PM</td>
+        <td>Rose Weigely</td>
+        <td>Data Driven Promotions</td>
+      </tr>
+      <tr style="background-color: #f0f0f0">
+        <td>3:30 AM</td>
+        <td>10:30 PM</td>
+        <td>7:30 PM</td>
+        <td>12:30 PM</td>
+        <td>Chris Albon</td>
+        <td>Don&#39;t Do Invisible Work</td>
+      </tr>
+    </table>
+  </section>
 
-    <section class="section is-medium m-5">
-      <div class="columns is-centered">
-        <a id="about"></a>
-        <div class="column is-variable">
-          <div class="content is-medium">
-            <h1 class="title has-text-centered">📖 About 📖</h1>
-          </div>
+
+  <a id="sponsors"></a>
+  <section class="section is-medium m-5" style="background-color: #ef028c;">
+    <div class="columns is-centered">
+      <div class="column is-6 has-text-centered">
+        <div class="content is-medium">
+          <h1 class="title" style=" color: #FFFFFF;">💰 Sponsors 💰</h1>
         </div>
       </div>
-      <div class="columns is-centered">
-        <div class="column is-half-desktop">
-          <div class="content is-medium">
-            <h3>
-              NormConf is the tech conference about all the stuff that matters in data and machine learning, but doesn't get the spotlight.
-            </h3>
-            <p>It was once said that a single tweet could launch a thousand ships, and so it was for NormConf:</p>
-            <div class="columns is-mobile is-centered has-text-centered">
-              <div class="column has-text-centered is-narrow">
-                <a href="https://twitter.com/vboykis/status/1552066833582276610"><img src="images/vicki_tweet.png" width="352"></a>
-              </div>
-            </div>
+    </div>
+    <div class="columns is-centered is-variable is-8 mt-6">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <h3 class="subtitle" style=" color: #FFFFFF;">🏆 Platinum Sponsors</h3>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://intuitivebayes.com"><img src="images/intuitive_bayes_logo_3x1.png" width="300px"
+                alt="Intuitive Bayes"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://prefect.io"><img src="images/prefect-logo-gradient-navy_3x1.png" width="300px"
+                alt="Prefect"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://anomalo.com"><img src="images/anomalo_3by1.png" width="300px" alt="Anomalo"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-variable is-8 mt-6">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <h3 class="subtitle" style=" color: #FFFFFF;">🥇 Gold Sponsors</h3>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://neptune.ai/"><img src="images/neptune_ai_blue_horizontal_3x1.png" width="300px"
+                alt="neptune.ai"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://iterative.ai/"><img src="images/iterative_3by1.png" width="300px" alt="iterative"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://dagshub.com"><img src="images/dagshub_3by1.png" width="300px" alt="DAGsHub"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://lambdalabs.com/"><img src="images/Lambda_3by1.png" width="300px" alt="Lambda"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
 
-            <article class="media">
-              <div class="media-content">
-                <div class="content">
-                  <p>What if there were a conference about all the mundane, behind-the-scenes, how-the-sausage-is-made, middlebrow, unsexy, normcore stuff in the data and ML parts of the tech world?</p>
-                </div>
-              </div>
-              <figure class="media-right">
-                <p class="image is-64x64">
-                  <img src="images/thinking_face_emoji.png">
-                </p>
+
+    <div class="columns is-centered is-variable is-8 mt-6">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <h3 class="subtitle" style=" color: #FFFFFF;">🥈 Silver Sponsors</h3>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-2by1" style="margin-top: 0;">
+            <a href="https://www.jumpingrivers.com/"><img src="images/Jumping_Rivers_logo_dark_2x1.png" width="300px"
+                alt="Jumping Rivers Ltd"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-1by1" style="margin-top: 0;">
+            <a href="https://sticker.space"><img src="images/sticker_space_logo.png" width="150px"
+                alt="sticker.space"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://www.pinnacle21.com/"><img src="images/pinnacle21_3x1.png" width="300px"
+                alt="Pinnacle 21"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered is-vcentered is-multiline is-variable is-8">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://www.routledge.com/"><img src="images/CRC_Press_logo_3by1.png" width="300px"
+                alt="CRC Press, Taylor and Francis Group"></a>
+          </figure>
+        </div>
+      </div>
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <figure class="is-1by1" style="margin-top: 0;">
+            <a href="https://trovbase.com/"><img src="images/Trovbase_Horizontal.png" width="150px" alt="TrovBase"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-variable is-8 mt-6">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <h3 class="title" style=" color: #FFFFFF;">🥉 Bronze Sponsor</h3>
+          <figure class="is-3by1" style="margin-top: 0;">
+            <a href="https://zefsguides.com"><img src="images/zefs_guides_logo.png" width="300px" alt="Zefs Guides"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered is-variable is-8 mt-6">
+      <div class="column has-text-centered is-narrow">
+        <div class="content is-medium">
+          <h2 class="title" style=" color: #FFFFFF;">🏅 Individual Sponsors</h2>
+          <article class="media" style="align-items: center;">
+            <div class="media-left">
+              <figure class="image is-64x64" style="margin-right: 0;">
+                <a href="https://twitter.com/nick_canz">
+                  <img class="is-rounded" src="images/nick_canz_400x400.jpg" alt="Nick Canzoneri">
+                </a>
               </figure>
-            </article>
-            <p><h4>We thought there should be!</h4></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="columns is-centered is-vcentered is-multiline mt-6">
-        <div class="column is-variable">
-          <div class="columns is-centered">
-            <div class="column has-text-centered is-narrow">
-              <div class="content is-medium">
-                <h3>🤓 Organizers 🤓</h3>
+            </div>
+            <div class="media-content" style="flex-grow: 0;">
+              <div class="content">
+                <h3 style="margin-bottom: 0;">
+                  <a class="on_pink" href="https://twitter.com/nick_canz">Nick Canzoneri</a>
+                </h3>
               </div>
             </div>
-          </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered mt-6">
+      <div class="column is-6 has-text-centered">
+        <div class="content is-medium">
+          <p style=" color: #FFFFFF;">For question and info on sponsorship, please contact us at <a class="on_pink"
+              href="mailto:sponsorship@normconf.com">sponsorship@normconf.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-medium m-5">
+    <div class="columns is-centered">
+      <a id="about"></a>
+      <div class="column is-variable">
+        <div class="content is-medium">
+          <h1 class="title has-text-centered">📖 About 📖</h1>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-half-desktop">
+        <div class="content is-medium">
+          <h3>
+            NormConf is the tech conference about all the stuff that matters in data and machine learning, but
+            doesn't get the spotlight.
+          </h3>
+          <p>It was once said that a single tweet could launch a thousand ships, and so it was for NormConf:</p>
           <div class="columns is-mobile is-centered has-text-centered">
             <div class="column has-text-centered is-narrow">
-              <div class="content is-medium">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><a href="https://www.twitter.com/vboykis">Vicki Boykis</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="https://twitter.com/econoben">Ben Labaschin</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/guenia/">Guenia Izquierdo</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="https://twitter.com/jeremyjordan">Jeremy Jordan</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="https://twitter.com/roycoding">Roy Keyes</a></td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
+              <a href="https://twitter.com/vboykis/status/1552066833582276610"><img src="images/vicki_tweet.png"
+                  width="352"></a>
+            </div>
+          </div>
+
+          <article class="media">
+            <div class="media-content">
+              <div class="content">
+                <p>What if there were a conference about all the mundane, behind-the-scenes,
+                  how-the-sausage-is-made, middlebrow, unsexy, normcore stuff in the data and ML parts of the tech
+                  world?</p>
               </div>
+            </div>
+            <figure class="media-right">
+              <p class="image is-64x64">
+                <img src="images/thinking_face_emoji.png">
+              </p>
+            </figure>
+          </article>
+          <p>
+          <h4>We thought there should be!</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered is-vcentered is-multiline mt-6">
+      <div class="column is-variable">
+        <div class="columns is-centered">
+          <div class="column has-text-centered is-narrow">
+            <div class="content is-medium">
+              <h3>🤓 Organizers 🤓</h3>
             </div>
           </div>
         </div>
-
-        <div class="column is-variable">
-          <div class="columns is-centered">
-            <div class="column has-text-centered is-narrow">
-              <div class="content is-medium">
-                <h3>😇 Volunteers 😇</h3>
-              </div>
+        <div class="columns is-mobile is-centered has-text-centered">
+          <div class="column has-text-centered is-narrow">
+            <div class="content is-medium">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><a href="https://www.twitter.com/vboykis">Vicki Boykis</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://twitter.com/econoben">Ben Labaschin</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.linkedin.com/in/guenia/">Guenia Izquierdo</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://twitter.com/jeremyjordan">Jeremy Jordan</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://twitter.com/roycoding">Roy Keyes</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="columns is-mobile is-centered has-text-centered">
-            <div class="column has-text-centered is-narrow">
-              <div class="content is-medium">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td><a href="https://twitter.com/fishnets88">Vincent D. Warmerdam</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="https://twitter.com/beeonaposy">Caitlin Hudson</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="https://twitter.com/kierisi">Jesse Mostipak</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="https://twitter.com/sethjuarez">Seth Juarez</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        </div>
+      </div>
+
+      <div class="column is-variable">
+        <div class="columns is-centered">
+          <div class="column has-text-centered is-narrow">
+            <div class="content is-medium">
+              <h3>😇 Volunteers 😇</h3>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-mobile is-centered has-text-centered">
+          <div class="column has-text-centered is-narrow">
+            <div class="content is-medium">
+              <table>
+                <tbody>
+                  <tr>
+                    <td><a href="https://twitter.com/fishnets88">Vincent D. Warmerdam</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://twitter.com/beeonaposy">Caitlin Hudson</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://twitter.com/kierisi">Jesse Mostipak</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://twitter.com/sethjuarez">Seth Juarez</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section is-medium m-5" style="background-color: #5fffcf;">
-      <div class="columns is-centered mt-6">
-        <a id="contact"></a>
-        <!-- <div class="column is-two-fifths-desktop is-two-fifths-tablet"> -->
-        <div class="column is-narrow has-text-centered">
-          <div class="columns is-centered">
-            <div class="column">
-              <figure class="image is-2by1">
-                <img src="images/normconf_banner_contact.png" alt="NormConf: The Normcore Tech Conference"/>
-              </figure>
-            </div>
-          </div>
-          <div class="content is-medium">
-            <h1 class="title has-text-centered">📠 Contact 📠</h1>
-            <ul style="list-style-type: none;">
-              <li><a href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span> @normconf</a></li>
-              <li><a href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span> info@normconf.com</a></li>
-            </ul>
+  <section class="section is-medium m-5" style="background-color: #5fffcf;">
+    <div class="columns is-centered mt-6">
+      <a id="contact"></a>
+      <!-- <div class="column is-two-fifths-desktop is-two-fifths-tablet"> -->
+      <div class="column is-narrow has-text-centered">
+        <div class="columns is-centered">
+          <div class="column">
+            <figure class="image is-2by1">
+              <img src="images/normconf_banner_contact.png" alt="NormConf: The Normcore Tech Conference" />
+            </figure>
           </div>
         </div>
+        <div class="content is-medium">
+          <h1 class="title has-text-centered">📠 Contact 📠</h1>
+          <ul style="list-style-type: none;">
+            <li><a href="https://twitter.com/normconf"><span class="icon"><i class="fab fa-twitter"></i></span>
+                @normconf</a></li>
+            <li><a href="mailto:info@normconf.com"><span class="icon"><i class="fas fa-envelope"></i></span>
+                info@normconf.com</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer" style="background-color: transparent;">
-      <div class="content has-text-centered">
-        <p>
-          Website by <a href="https://roycoding.com">Roy Keyes</a>. Logo design by <a href="https://barbasboth.com/">Barbara Asboth</a>.
-        </p>
-        <p>© 2022, NormConf</p>
-      </div>
-    </footer>
-  </body>
+  <footer class="footer" style="background-color: transparent;">
+    <div class="content has-text-centered">
+      <p>
+        Website by <a href="https://roycoding.com">Roy Keyes</a>. Logo design by <a
+          href="https://barbasboth.com/">Barbara Asboth</a>.
+      </p>
+      <p>© 2022, NormConf</p>
+    </div>
+  </footer>
+</body>
 
 </html>
