@@ -147,6 +147,11 @@
     table.schedule tr:nth-child(even) {
       color: #6017af;
     }
+
+    .message.is-primary .message-header {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -259,44 +264,6 @@
             <p>
             <h2 class="title is-2">Yes, it's really happening!</h2>
             </p>
-
-            <article class="message is-large">
-              <div class="message-header">
-                <p>LiveStream Link:</p>
-                <button class="delete is-large" aria-label="delete"></button>
-              </div>
-              <div class="message-body">
-                <b>Current LiveStream: https://youtu.be/pR3QUegElmA/ </b>
-                <br>
-                <table>
-                  <style>
-                    table,
-                    th,
-                    td {
-                      padding: 10px;
-                      border: 1px solid black;
-                      border-collapse: collapse;
-                    }
-                  </style>
-                  <tr>
-                    <td> Session 1</td>
-                    <td>7:30 AM - 12:00 PM EST <br> 12:30PM - 5:00 PM UTC</td>
-                    <td>https://youtu.be/pR3QUegElmA</td>
-                  </tr>
-                  <tr>
-                    <td> Session 2</td>
-                    <td>12:00 PM EST - 5:00 PM EST <br> 5:00 PM - 10:00 PM UTC</td>
-                    <td>https://youtu.be/DhXVQFW-WcE</td>
-                  </tr>
-                  <tr>
-                    <td> Session 3</td>
-                    <td>5:00 PM EST - 10:30 PM EST <br> 10:00 PM - 3:30 AM UTC </td>
-                    <td> https://youtu.be/DYz5dMmtO6o</td>
-                  </tr>
-                </table>
-              </div>
-            </article>
-
           </div>
         </div>
         <div class="columns is-vcentered">
@@ -321,6 +288,60 @@
             <img src="images/its_happening.webp" width="400">
           </div>
         </div>
+
+        <div class="columns is-centered">
+          <div class="column is-10">
+            <article class="message is-large is-primary has-text-centered m-2">
+              <div class="message-header">
+                <p>LiveStream Links</p>
+              </div>
+              <div class="message-body has-text-centered">
+                <p><b>
+                    <h2>Current LiveStream: <a href="https://youtu.be/pR3QUegElmA/">https://youtu.be/pR3QUegElmA/</a>
+                    </h2>
+                  </b>
+                </p>
+                <br>
+                <div class="columns is-centered">
+                  <div class="column">
+                    <strong><span style="color:#4200be;">Session 1</span></strong>
+                  </div>
+                  <div class="column">
+                    7:30 AM - 12:00 PM EST <br> 12:30 - 17:00 UTC
+                  </div>
+                  <div class="column">
+                    <a href="https://youtu.be/pR3QUegElmA">https://youtu.be/pR3QUegElmA</a>
+                  </div>
+                </div>
+
+                <div class="columns is-centered" style="background-color: #FFFFFF;">
+                  <div class="column">
+                    <strong><span style="color: #ef028c;">Session 2</span></strong>
+                  </div>
+                  <div class="column">
+                    12:00 PM - 5:00 PM EST <br> 17:00 - 22:00 UTC
+                  </div>
+                  <div class="column">
+                    <a href="https://youtu.be/DhXVQFW-WcE">https://youtu.be/DhXVQFW-WcE</a>
+                  </div>
+                </div>
+
+                <div class="columns is-centered">
+                  <div class="column">
+                    <strong><span style="color: #6017af;">Session 3</span></strong>
+                  </div>
+                  <div class="column">
+                    5:00 PM - 10:30 PM EST <br> 22:00 - 03:30 UTC
+                  </div>
+                  <div class="column">
+                    <a href="https://youtu.be/DYz5dMmtO6o">https://youtu.be/DYz5dMmtO6o</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
       </div>
     </div>
     <div class="hero-footer">
