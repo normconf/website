@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Normconf: Five semesters of linear algebra and all I do is solve Python dependency problems -  Tim Hopper Transcript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Transcript of Five semesters of linear algebra and all I do is solve Python dependency problems -  Tim Hopper from Normconf" />
+  <meta property="og:title" content="Normconf: Five semesters of linear algebra and all I do is solve Python dependency problems -  Tim Hopper Transcript" />
+  <meta property="og:url" content="https://normconf.com" />
+  <meta name="og:description"
+    content="Transcript of Five semesters of linear algebra and all I do is solve Python dependency problems -  Tim Hopper from Normconf" />
+  <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="normconf.com" />
+  <meta name="twitter:creator" content="@normconf" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background-image: url('images/background_placeholder.png');
+    }
+
+    .hero {
+      background-color: None;
+      color: #797979;
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    a:link {
+      color: #4200be;
+    }
+
+    a:visited {
+      color: #4200be;
+    }
+
+    a:active {
+      color: #ef028c;
+    }
+
+    a:hover {
+      color: #ef028c;
+    }
+
+    a.light_link:link {
+      color: #ef028c;
+    }
+
+    a.light_link:visited {
+      color: #4200be;
+    }
+
+    a.dark_link:link {
+      color: #ef028c;
+    }
+
+    a.dark_link:visited {
+      color: #ef028c;
+    }
+
+    a.dark_link:active {
+      color: #5fffcf;
+    }
+
+    a.dark_link:hover {
+      color: #5fffcf;
+    }
+
+    a.on_pink:link {
+      color: #5fffcf;
+    }
+
+    a.on_pink:active {
+      color: #6017af;
+    }
+
+    a.on_pink:hover {
+      color: #4200be;
+    }
+
+    .navbar.is-dark .navbar-end>a.navbar-item:hover {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-item {
+      white-space: normal;
+    }
+
+    .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-brand>a.navbar-item:hover {
+      background-color: #6017af;
+    }
+
+    .button.is-danger {
+      background-color: #ef028c;
+    }
+
+    .button.is-primary {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+
+    table.speakers1 {
+      font-weight: bold;
+      color: #4200be;
+      width: auto;
+    }
+
+    table.speakers2 {
+      font-weight: bold;
+      color: #6017af;
+      width: auto;
+    }
+
+    table.schedule {
+      font-weight: bold;
+      /* width: auto; */
+    }
+
+    table.schedule td {
+      text-align: center;
+      padding: 0.5em;
+      max-width: 30em;
+      /* word-wrap: break-word; */
+    }
+
+    table.schedule tr:nth-child(odd) {
+      color: #4200be;
+      background-color: #00000017;
+    }
+
+    table.schedule tr:nth-child(even) {
+      color: #6017af;
+    }
+
+    .message.is-primary .message-header {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+  </style>
+  </head>
+  <body>
+  <section class="section" style="background-color: #6017af;">
+    <div class="container">
+    <div class="box">
+      <h1 class="title">
+        Five semesters of linear algebra and all I do is solve Python dependency problems -  Tim Hopper
+      </h1>
+      <p class="subtitle">
+        Transcript generated with <a href='https://github.com/openai/whisper'>OpenAI Whisper</a> <code>large-v2</code>.
+      </p>
+      </div>
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=0">All right, good morning. I'm Tim Hopper. I'm a staff software engineer at Varo Bank. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=5">I'm speaking to you from my home office in Raleigh, North Carolina. I've worked remotely out of Raleigh for the last almost 10 years now. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=13">I hope this talk doesn't disappoint anyone to find out that it's actually not about linear algebra and it's not about Python dependencies. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=20">In particular, if you're too disappointed, you can head over to normconf.com and watch some of the lightning talks for the next half hour. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=27">But if you're only a little bit disappointed and you want to talk about those things, I'd be happy to talk to you about them after the talk. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=34">They're two favorite topics of mine. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=36">What this talk is, is something I've kind of had in the back of my mind for years. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=42">It's a reflection on the evolution of my own interest in my career and how the two relate and don't relate. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=48">In some ways, it's a working out of how I followed my passion and my passion being really a love for math. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=55">It led me to data science and machine learning and sent me out the other side of the door, doing work outside of my passions. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=67">I think it's possibly an overly introspective discourse on how I got into data science out of my love for math. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=74">Now, 10 years into it, I do basically no math in my job. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=79">I think there are others like me. I've talked to others like me. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=83">This is a talk for you and hopefully others who don't totally get it will benefit from it as well. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=92">This is what my wife thinks I do. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=96">Hunched over my desk in my home office, occasionally mumbling things about Pip and Conda, which she knows nothing about. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=104">My mom, on the other hand, she tells people I'm a super geek and she doesn't know what I do. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=110">She just thinks I work magic with computers. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=115">My CEO, maybe a little too similar to my mom in ways, thinks I'm like Minority Report, a perfect precognition machine making predictions about the future. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=127">My manager, a little closer to home, knows me a little better. This is what he thinks I do. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=135">What I thought I would do as a grad student studying machine learning 10, 12 years ago was spend a lot of time choosing kernels for support vector machines. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=147">This is actually a plot I made in Mathematica for a paper I wrote on support vector machines as a grad student. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=155">And I can pretty confidently say I have never needed to choose a kernel for a support vector machine. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=163">On Twitter, of course, this is what I want people to think I do. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=168">I work on deep learning and large language models and that kind of thing. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=173">But of course what I actually do as a staff software engineer is search stack overflow for how to solve my Python dependency issues like installing TensorFlow on a M1 Mac. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=187">If I was a little higher tech, I would include the clip that's famous in so many movies like, yep, that's me. You probably wonder how I got here. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=197">And that's what I wonder too some days, how I got here, where my biggest contributions are often figuring out how to get pip to work the way we want it to work. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=207">So I'm a staff software engineer at Varo Bank. We're a consumer bank, phone-based bank, trying to make banking accessible to all. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=219">I help build and maintain our feature platform for the data science team to make machine learning features available for model training and batch and real-time inference. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=231">So I also make it so defining new features is very accessible to our data science and analysts so they have the data they need when they need it and where they need it. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=241">And reliably consistent data across the machine learning life cycle. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=246">I've spent really, I guess, the last five years or so more and more oriented towards helping provide tools and platforms that data scientists need to develop and productionize machine learning. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=257">I'm actually really glad I get to be involved on the more higher level and system level design of things. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=267">But I think in many ways a lot of my contributions over my career has been trying to master the Python language and its ecosystem and use that knowledge to assist my team and my companies that I've worked at. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=279">So I've spent a lot of time just teaching people how to use Python more effectively, encouraging better software engineering practices, a lot of debugging people's PIP issues, a lot of Googling Bodo exceptions, that kind of thing. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=293">And I enjoy that and it's satisfying work, but it's not work that I expected to find myself doing. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=300">So I want to talk back up a little bit and talk about how I got here, because it's not really where I thought I would end up. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=310">So I really do love math. I loved linear algebra from the get go. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=315">I think I was the maybe that person sitting next to Jesse and linear algebra, like it came pretty natural to me. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=321">I've loved algorithms and just algorithmic thinking and mathematical models. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=325">And this goes back for me at least as far as Bill Clinton's first term in the presidency. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=331">In 1993 my parents sent out this Christmas letter when I was eight years old. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=336">And talking about me, my mom said he hates handwriting, but since he learned phonics last year he peruses the world book for fun. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=343">Math is entertainment for him. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=346">Chris Albin, don't be offended that I used the world book. We didn't have Wikipedia back then. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=352">But I loved math at eight years old. I think there's an indication I loved math at even younger than that. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=359">I wasn't like, you know, Terry Tal, a calculus genius at four, but just always enjoyed math for as long as I can remember. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=371">Perhaps unsurprisingly, that led me to study math as an undergrad. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=378">I went to Grove City College in Western Pennsylvania. I actually started as a physics major. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=384">I think I had some kind of starry-eyed dream of becoming a physics professor for whatever reason. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=391">But pretty quickly I actually changed to computer science as I realized I was enjoying some of that work. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=398">And I didn't particularly enjoy the lab side of physics. I enjoyed the math side of physics, unsurprisingly. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=405">So I thought maybe computer science would be for me. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=409">But pretty quickly as a computer science student, I think my sophomore year I was taking a theory of computation class, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=419">which is basically a math class about computation. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=423">And I was looking around the classroom and realized I was the only person actually enjoying it and really soaking it up. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=431">And most of my peers in computer science just wanted to be programming. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=436">And I wasn't actually particularly interested, that interested in programming. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=441">It kind of seemed like a tool to support the greater cause of studying this interesting, more abstract discipline of computer science. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=450">But I wasn't really wanting to be a programmer. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=454">So I finally realized math was for me and changed at the end of my sophomore year to be a math major. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=460">As an undergrad, I took my first two semesters of linear algebra, introduction to linear algebra, and then later numerical linear algebra. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=472">And I graduated in 2008 with highest honors in math. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=477">And while I was an undergrad, I came across this article. I have no recollection of how I came across it. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=486">But it was a business week and I found it online still, 2006. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=491">And I remember this quote from the article says James R. Schatz, chief of mathematical research group at the National Security Agency, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=502">there has never been a better time to be a mathematician. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=505">And I remember that quote and I found that very compelling. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=509">And I was like, well, I could be a mathematician. This is great. Never been a better time. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=513">The article goes on actually to really start to describe what people started to call data science four or five years later. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=523">Says from fledgling, fledglings like Inform to tech powerhouses like such as IBM, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=529">companies are hitching mathematics to business in ways that would have seemed fanciful even a few years ago. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=535">Over the past decade, a sizable chunk of humanity has moved its work, play, chat and shopping online. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=542">We feed network networks, gobs of digital data that once would have languished on scraps of paper or vanished as forgotten conversations. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=551">Even with the most powerful computers and abundant, cheap storage, companies can't sort out their swelling oceans of data, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=558">much less build businesses on them without enlisting skilled mathematicians and computer scientists. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=565">I think that's actually pretty great description of what would start to develop as data science over the last 15 years. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=574">But in hindsight, I think the choice of the term mathematician there is was maybe a little bit skewed and not quite accurate. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=586">But for me at the time, I was like, this sounds great. I love math and the job that uses math would be perfect for me. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=596">So after my undergrad, I actually entered the University of Virginia as a PhD student in the history of mathematics, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=603">which is certainly a talk for another time, not for today. But that was a program in the math department. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=611">I took my second semester of linear algebra or my third semester of linear algebra, their advanced linear algebra. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=618">But I fairly quickly realized that this program was really only setting me up for a career in academia. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=623">And that career path was increasingly unattractive to me, which is probably a talk for also another time. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=631">I started to understand that my math skills on their own probably weren't going to be much valuable value to anybody </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=640">outside of teaching and instruction, which even then you need more than just math skills. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=646">But math skills at that time were really all that I had. I had done a little programming in high school. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=653">I taught myself a PhD to make Lord of the Rings fan sites. And before that, I had done some TI basic, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=661">which I don't think there's a norm talk on TI basic, but there really should be next time around. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=667">I'm sure many of us cut our teeth on TI basic on our graphing calculators. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=673">And I'd done a little programming in college, but I wasn't programming at all at this time as a grad student. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=679">And getting a job in software wasn't really an option for me. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=683">So I was kind of realizing I was somewhat skillless despite having a degree in math and being good at math. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=692">Nobody really is hiring for that for the most part. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=697">I discovered at some point the discipline of operations research, and it seemed like a great opportunity to merge </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=704">interest in math, real world problems and computation. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=708">And I found myself as a PhD student again at North Carolina State University where I spent two and a half years. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=717">And it was in this era, which is 2010 to 2012, that data science was really blowing up on Twitter. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=725">And I was spending more time on Twitter than I should have instead of on my homework. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=730">And seeing people like, you know, early, the early data science crowd, Hillary Mason, Drew Conway, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=737">these people talking about this thing called data science, it sounded really cool to me, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=741">and a way to use math, much like I was interested in operations research, to use math and computation to solve these real problems. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=750">And it seemed like a pretty obvious career path to me at the time. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=754">So I ended up losing my PhD advisor and dropping out with a master's. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=760">But in the interim, I was able to start to orient myself towards learning machine learning on the side, as well as in my coursework. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=768">And I was teaching myself R and Python in that era. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=773">It's also where I took my last two linear algebra classes, another numerical linear algebra class, and then an applied linear algebra class. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=785">So that leads me up to actually step one step back in the middle of that time in grad school. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=794">I was able to talk my way into an internship at Kiva Systems, which is now Amazon Robotics, which James, the emcee here, and I share in common. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=805">He worked there a few years after I did. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=807">But I was in the algorithms research group, which was just mostly one guy at the time. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=813">And I thought I had really hit what was going to be the glory land for me, getting to do this more pure algorithms work, focus more on thinking about these optimization problems, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=829">and working on optimizing warehouse robots. And my boss there was a PhD, where he studied vehicle routing problems at UCLA. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=839">And as a starry-eyed grad student who wasn't that interested in software, I was discouraged to find out he was spending a lot of his time on the lowly work of getting Java code ready for production, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=849">instead of doing what I thought was the pure work of algorithms research. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=853">And I committed myself that I was never going to fall down the route of just becoming a software developer. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=857">I was going to do math in my career. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=861">And from there, I left grad school. I thought I really found the perfect job for me in 2015. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=869">A friend asked me to come work with him on a DARPA project, building an open source implementation of inference for Bayesian nonparametric models, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=878">which involved a lot of really interesting statistics and math, and a lot of things I knew nothing about that I had to go read papers and learn and derive equations. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=887">And it was really fun. And then that two to three year project died suddenly after some staff change at DARPA, and I was back on the job market again. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=901">And after that, I had some kind of a realization that there's not this enormous market for algorithm implementers who get to do more of that kind of pure work of understanding the algorithm and implementing it. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=914">If only for the reason because you implement an algorithm one time and you have a good implementation, you get to use it over and over and over again, </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=925">as we all use, you know, Scikit and PyTorch and TensorFlow and whatever over again. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=931">Sometimes we use Fortran implementations that were written 40 years ago. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=937">So after that, I shifted back towards more traditional data science roles. And I decided if I couldn't be responsible for the underlying algorithms, I could at least work on the math modeling side. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=949">But even then, I learned that in many companies, I think especially smaller companies that where I've been a part of the engineering barriers to making effective use of data science models was often momentous. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=963">And models often in the math modeling was one of the least important parts, because there were so many barriers to getting things into production. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=970">So you have challenges like getting good data, political and organizational tensions, and these engineering challenges. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=977">So at some point, I decided I was going to, I was so frustrated with the engineering deficits that I was going to solve these engineering problems before going back and trying to solve what I thought were interesting kind of data and math modeling problems. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=991">I decided, I guess at this point that I'd become what we now call a machine learning engineer, because I wanted to be a data scientist who doesn't have to fight with Python dependency issues. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1002">And who could instead spend all my time thinking about the nuances of support vector machine kernels and deep learning architectures. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1009">So I'd be the change I wanted to see in my companies by doing the engineering required what I kind of saw as the dirty work to allow the data scientists to do that what I think, what I thought anyway, is the interesting work. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1024">But at the same time, I've, I've started to learn that there really actually is something quite enjoyable about writing great software, getting that software ready for production. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1035">And, and it's, if you're willing, it's something that's fun to be a part of. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1040">And so as a, as a software developer, not doing, you know, mathy things necessarily, I still get to originate these ideas in my head, and write them out with my fingertips. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1051">And unlike doing maybe just pure math work, you can maybe see that scale to work for millions of people or more and provide value for a company and its customers. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1062">And it's just fun to do something useful. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1065">Whereas, you know, as much as I enjoy, even the the pure side of math and proof and various things, and getting to see something that can be used engaged by others is very satisfying. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1085">I don't regret at all studying math. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1089">I'm actually really glad I did. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1092">I, in many ways, followed my passions, which I don't think is always great advice. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1097">I didn't really have a plan as I went into studying math. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1101">But it was just the route forward for me, and it's worked out in many ways. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1106">But as I think back on this quote, there's never been a better time to be a mathematician. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1114">The distrust for the NSA is probably on that quota as well as more other things these days than it was at the time. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1121">But I think that was a misleading quote. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1124">And I think, you know, not to disparage many mathematicians that I know, but there's never been a better time to be competent in math, good at math. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1144">But being a mathematician on its own, I think, usually is a pretty poor career path for people. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1147">And I tell most people today, people come and ask me about this, I think math skills without programming skills in 2022 are going to be all but worthless. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1156">Unless you are becoming an instructor. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1161">But even then, I think probably a lot of people in various teaching capacities are going to want those programming skills as well as they might have opportunities to teach things like data science courses. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1174">I was overconfident and perhaps oversold the value of being good at math for most of my day-to-day work. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1181">I can think back to these are three of the linear algebra texts I had over the years. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1186">I reference very few of the ideas that I ever learned in those things. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1193">But sometimes when the need comes, it's great to have those little pieces of knowledge. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1202">At the same time, I've started to learn that software provides many of the same joys we can get in mathematics. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1208">Problem solving, abstractions, worlds generated just by logic, reproducibility, really endless areas of study. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1217">And I think probably this was obvious to a lot of people, but it wasn't as obvious to me. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1222">For me, the joy and beauty of software was often hidden behind the frustrations and challenges of things like PIPs, resolution, impossible exception. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1233">But I've learned to uncover those beauty and that joy of getting to create things with software the way that in math you can create things with ideas. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1245">So my career has been a crazy, unpredictable road. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1248">And I suspect it's going to continue to be that. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1251">I've spent a lot of time solving Python dependency issues and a lot less time than I thought thinking about support vector machine kernels. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1259">But it's turned out all right. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1262">And I, you know, after this talk, I think other people have sympathized with some of these ideas. </a><a href="https://www.youtube.com/watch?v=6flt_3yMNb0&t=1268">If people want to talk about this, I'd be happy to do that. </a>
+      </p>
+    </div>
+  </section>
+  </body>
+</html>

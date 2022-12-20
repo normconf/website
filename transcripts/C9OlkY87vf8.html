@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Normconf: An ML Fairytale - Vicki Boykis, Keynote Transcript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Transcript of An ML Fairytale - Vicki Boykis, Keynote from Normconf" />
+  <meta property="og:title" content="Normconf: An ML Fairytale - Vicki Boykis, Keynote Transcript" />
+  <meta property="og:url" content="https://normconf.com" />
+  <meta name="og:description"
+    content="Transcript of An ML Fairytale - Vicki Boykis, Keynote from Normconf" />
+  <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="normconf.com" />
+  <meta name="twitter:creator" content="@normconf" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background-image: url('images/background_placeholder.png');
+    }
+
+    .hero {
+      background-color: None;
+      color: #797979;
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    a:link {
+      color: #4200be;
+    }
+
+    a:visited {
+      color: #4200be;
+    }
+
+    a:active {
+      color: #ef028c;
+    }
+
+    a:hover {
+      color: #ef028c;
+    }
+
+    a.light_link:link {
+      color: #ef028c;
+    }
+
+    a.light_link:visited {
+      color: #4200be;
+    }
+
+    a.dark_link:link {
+      color: #ef028c;
+    }
+
+    a.dark_link:visited {
+      color: #ef028c;
+    }
+
+    a.dark_link:active {
+      color: #5fffcf;
+    }
+
+    a.dark_link:hover {
+      color: #5fffcf;
+    }
+
+    a.on_pink:link {
+      color: #5fffcf;
+    }
+
+    a.on_pink:active {
+      color: #6017af;
+    }
+
+    a.on_pink:hover {
+      color: #4200be;
+    }
+
+    .navbar.is-dark .navbar-end>a.navbar-item:hover {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-item {
+      white-space: normal;
+    }
+
+    .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-brand>a.navbar-item:hover {
+      background-color: #6017af;
+    }
+
+    .button.is-danger {
+      background-color: #ef028c;
+    }
+
+    .button.is-primary {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+
+    table.speakers1 {
+      font-weight: bold;
+      color: #4200be;
+      width: auto;
+    }
+
+    table.speakers2 {
+      font-weight: bold;
+      color: #6017af;
+      width: auto;
+    }
+
+    table.schedule {
+      font-weight: bold;
+      /* width: auto; */
+    }
+
+    table.schedule td {
+      text-align: center;
+      padding: 0.5em;
+      max-width: 30em;
+      /* word-wrap: break-word; */
+    }
+
+    table.schedule tr:nth-child(odd) {
+      color: #4200be;
+      background-color: #00000017;
+    }
+
+    table.schedule tr:nth-child(even) {
+      color: #6017af;
+    }
+
+    .message.is-primary .message-header {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+  </style>
+  </head>
+  <body>
+  <section class="section" style="background-color: #6017af;">
+    <div class="container">
+    <div class="box">
+      <h1 class="title">
+        An ML Fairytale - Vicki Boykis, Keynote
+      </h1>
+      <p class="subtitle">
+        Transcript generated with <a href='https://github.com/openai/whisper'>OpenAI Whisper</a> <code>large-v2</code>.
+      </p>
+      </div>
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=0">Hey, everybody. Welcome to NormConf. Good morning, good afternoon, good evening. I am </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=8">going to start off. So it's very appropriate that James and Jesse were talking about Bards </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=13">because what I want to do is I actually want to tell you a machine learning fairy tale. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=19">Once upon a time in the kingdom of all users contained in a matrix of M by N in the real </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=27">number space, there lived a girl named Vectorella who was a machine learning engineer. And Vectorella </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=34">was pretty happy. She was doing her machine learning stuff. She worked for a company that </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=42">made Nutella, which is everybody knows is everybody's favorite spread for hypothesis </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=48">testing fans. And as a company that made Nutella, this company shipped it far and wide across </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=56">all places, both in the user matrix space and in the real world across hundreds and </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=61">hundreds of countries. Now, as such, they had a lot of business transactions and a lot </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=68">of data to deal with. So Vectorella had to handle a bunch of different stuff as a machine </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=74">learning engineer. She had to handle API errors, time zone issues, import errors, K8s. And </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=81">she was generally pretty okay with this, but she wanted a lot more. And what Vectorella </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=87">saw whenever she went to her work slack was past the air flow alerts, past the memes, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=94">past the spark issues, there was a private channel that she could see that was called </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=98">staff Emily's. And all Vectorella wanted to do was to get into that staff Emily channel </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=104">with all of her heart. She was doing her day to day stuff, but she thought they were doing </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=110">more in there. She thought they might have been doing stable diffusion or chat GPT. And </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=118">all she wanted to do was do that cool stuff instead of the stuff that she did on a day </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=122">to day basis. One day a miracle happened. Her very cool boss sent her a text message </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=130">and said, hey, I think you've been doing a lot of this great work and it's time for you </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=135">to join this channel. And Vectorella said, this is amazing. I would love to join this </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=140">channel. But then a misfortune befell Vectorella. She went through a rework. And so what happened </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=148">was the cool boss she used to have was replaced by an evil boss and two step PMs. So now not </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=155">only did she have different work, but she had three people managing her work. And so </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=160">she was further away from that staff Emily channel than she ever thought possible. And </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=166">she said, can we, can I please go to this channel to her new evil step PMs and step </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=172">manager? And they said, no, we have a lot of work for you to do. You have to do these </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=177">three tasks. If you do these three tasks, maybe we will let you in the channel. Maybe </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=184">we'll have to see how well you do them. And so Vectorella thought, okay, I guess I've </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=189">already been doing a lot of this work, but I really want to see what they're discussing </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=192">in there. So she put on her hat and got to work. The first task that they gave her was </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=206">to count sales. So Noltella comes in all sorts of varieties, large jars, medium jars, small </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=212">jars. And in order to increase revenue, they also branched out into gelato and biscuits. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=220">Vectorella's job was to count all of these. Don't forget it shipped both in the multidimensional </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=228">vector space and in the real world. So there were sales across many, many countries. So </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=233">she had sales for the U S Morocco and Japan and lots of other places. So she said, okay, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=241">I guess I'll do this. So she took all the orders that were placed in the United States. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=248">So there were biscuits, medium, small, large jars, et cetera. She had an enormous list. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=253">And she took that from the transaction logs and put that into a list. Then she said, okay, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=260">I guess I'll count these. So for every item in the orders, she added it to a default dict </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=266">and then she incremented the counter for everyone in the U S until she had all her items added </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=272">up all together. She wasn't done though yet, because there are a lot of other countries </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=279">that had these sales. So she also had to do the same thing for Japan, Morocco, China, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=284">France, Italy, and others. At this point in Vectorella was getting really bored, but she </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=290">really wanted to be in that channel. So then she said, okay, well now I guess I have to </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=294">add all of these countries together. So then she incremented a counter. She took all her </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=300">global orders and she added an incremented those orders as well, so that she had a global </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=306">count of everything all together. And she said, okay, I guess this is it. I did this. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=315">This is so boring. And then she went to her evil step boss and step PMs and said, is this </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=322">getting me closer to getting into that Slack channel? And they said, sure, but we have </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=326">a second task for you. Now you have to turn words and millions of recipes into numbers. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=333">And Vectorella said, why, why do I have to do this? This is going to be so boring. And </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=338">they said, just do it. Don't ask questions. So she said, okay. And she went to see that </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=344">the recipes that Noltella had illegally scraped from the internet to do work with. She wasn't </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=351">sure about that part, but she did look at these recipes and they had things like a list </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=355">of ingredients, a list of steps, a list of things that went together to make things out </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=361">of Noltella. So for example, this is a Noltella cake and there were millions of these. And </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=368">she said, okay, well, how am I going to turn these into numbers? So what she did was first </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=376">she turned it into code and she created a big long string for each recipe. Then she </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=385">said, okay, what am I going to do next? I guess I have to clean this data so I can somehow </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=392">process these strings. And so Vectorella did what she did best, which was clean a lot of </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=397">data. So she had to lowercase all the stuff. She had to take out the contractions. She </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=403">had to remove all the symbols, strip all the spaces. This is so boring. I bet they're doing </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=408">stable diffusion in there, she thought as she was writing all this cleaning data. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=415">Then she had her cleaned words and then she thought, okay, what am I going to do next? </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=421">Then she ended up mapping each word in the clean list to an integer, to a sequential </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=428">integer. She said, okay, this is kind of something. But this is not really what they were asking </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=435">for, I think. And so then what she did next was to actually encode the words. And so what </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=442">she did was she created, she took the dictionary and for each word in the dictionary, she assigned </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=450">it to a vector of zeros and then everywhere in the vector where the word actually was, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=456">she replaced it with a one. And then what she ended up having was a set of one hot encodings. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=463">And she said, okay, I guess this is something. What is this? Why am I doing this? I could </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=470">be posting memes in that channel right now. People would be liking it and appreciating </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=475">it instead of making dictionaries. Vectorella was tired and angry. So she went to her step </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=482">PMs and her step manager and said, look, I've created this. I've processed them. I've mapped </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=492">my vocab and I've encoded them so that I actually have vectors for each word. Is this something? </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=498">Can I go now? And they said, no. You have one more task. Since you did these other two </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=504">tasks and they were reasonably okay, we'll see if we let you in the channel after that. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=510">Now you have to schedule these to run every day on a daily basis because we sell Nutella </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=516">every day and we also need to process it every day. And Vectorella said, oh, I just want </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=524">to be in that room. So what she did was she rolled up her sleeves again and she created </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=529">a crontab script that ran every day and that did a couple of things. First, it took all </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=536">the code that she had run on her local machine and it's linked to a remote Linux server because </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=543">Nutella only has one remote Linux server. It's a very norm core company. And then what </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=548">that script does is at the same time every day, it runs that sales script and that number </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=553">script. And she said, okay, I'm done. I cleaned everything. And she said, please, please, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=562">can I be in that channel? And they said, okay, fine. You win. So the fairy SRE came along </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=571">and gave her all the correct admin access and unlocked the staff MLE channel. And that's </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=579">when Vectorella became staff MLE Vectorella. Vectors. But when she got to the channel, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=590">she noticed something weird. She noticed that these staff MLEs were asking interesting questions. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=599">So the first one asked, hey, how do I run a distributed Spark job on a million parquet </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=605">files in an S3 bucket to get the total counts of receipts for my sales forecast model? And </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=612">Vectorella thought, hmm, curious. She thought, what do I know about Spark? What is Spark? </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=621">So Spark is a way to do computation through data parallelism and fault tolerance across </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=626">multiple commodity machines. What does that mean in English? It means that you can take </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=631">a program that computes the frequencies or sums of all words or items in your sales catalog </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=638">occurring in a set of text files and prints or outputs the most common ones. So what Vectorella </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=645">realized was that the Spark diagram on the left was actually what she had been doing </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=654">in adding sales per country and then aggregating them across the world this entire time. Vectorella </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=661">was shocked and scandalized, but there was more in store for Vectorella. Second, in that </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=670">super secret staff MLE Slack channel, she did not see people multiplying matrices or </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=676">working on stable diffusion. What she did see, well, she kind of did, but not really. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=681">Not for the sake of the narrative. What she did see was the super staff MLE number two </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=686">that said, I'm trying to create a set of embeddings projected into a lower dimension space to </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=691">predict which ingredients I can cluster with Nutella for optimal combinations to show my </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=697">customers. What does this mean? It means you have millions of recipes and you have one </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=704">Nutella and you want people to select ingredients that they can cluster together to suggest </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=711">what they can make with Nutella. So for example, on the right hand side, if you have lemon, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=718">peppermint and cream and they commonly cluster together, you can suggest that they make Nutella </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=722">cookies. If you have vanilla, butter and chocolate, you can suggest that they make a Nutella cake, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=728">which requires buying four to five jars of Nutella. Buy Nutella, stock goes up. If you </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=734">have for some reason, banana and pizza dough and crepe, I'm sorry about this one. You can </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=740">make something in the category of sandwiches potentially, or flatbreads or something similar </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=746">that you can sell Nutella to. But for that, you need to generate embeddings out of text </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=752">and vector. I thought, well, what is an embedding? Embeddings are just a way to compress highly </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=758">dimensional data, such as text or images and no smaller dimensional space by assigning </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=762">each data point to a vector and comparing similarity of those vectors to each other. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=768">So she thought, okay, well, what is this? This sounds familiar to what was she doing? </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=774">She was just creating vectors too. And in fact, if you go to the wonderful PyTorch documentation, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=780">it'll tell you that the one hot vectors that we created, which are sparse because they </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=785">only have data points at certain points, are actually a special case of dense word embeddings, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=790">which we use for deep learning and stable diffusion. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=795">Finally, a third super staff machine learning engineer was asking a different question. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=802">Vectorola was puzzled. She thought this channel was going to be super high level discussions, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=807">theory, et cetera. But what they asked is, can someone validate my Airflow job to update </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=813">my machine learning retraining pipeline? And Vectorola thought, what is Airflow? </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=822">She remembered that Airflow is a programmatic way to create, monitor, and deploy batch workflows </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=829">on a scheduled basis. She thought, what does this sound like? This sounds like something </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=835">that I've done before. It sounds like fancy crontab. So Airflow is basically fancy crontab. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=845">It's a way to schedule a lot of different complicated tasks, like, for example, your </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=849">Python scripts or your model runs. So it turned out that Vectorola had been doing this also </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=855">kind of all along. What is the moral of the story? Basically, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=863">in the data science, machine learning, and general data space, we are all Vectorola today. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=870">Why? Because the advertised map for what we do at work is not the true territory. The </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=876">interviews that we go through, the medium articles that we read, the hacker news articles </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=880">that we read, all of this work, not all of it is encompassed by what we do on a day to </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=885">day basis, which is crontab, and creating dictionaries and adding things to lists. This </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=892">is the heart of the true work of machine learning. Second, what Vectorola realized is that building </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=900">machine learning systems is just building software. And building software is fragile. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=905">It has lots of different components. It has lots of things that break. It's not glamorous. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=911">It's not sexy. It's real true work that you need to do to get your stuff to work. And </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=916">that's what she had been doing when she started working on this. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=922">Third, even advanced work deals with normal problems. So this is actually a screenshot </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=929">for when I tried to register for chat GPT on the first day it came out. And potentially </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=935">they were having problems serving web requests, which has nothing to do with the really complicated </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=940">and impressive model that was happening in the back end, which goes to my last point, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=944">which is that data work is also engineering work, and we deal with a lot of the complexities </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=950">and fiddling with all the pieces that that entails. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=956">And finally, something that Vectorola realized was that the solid fundamentals that she had </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=960">been working all along that seemed very boring to her and not related to what she had read </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=966">about in the media were actually the fundamentals. And if she learned those very well, then she </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=973">could do and be present for the advanced work as well. And I think that's something that </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=978">we can all take to heart. So what Vectorola realized is that she now lived enlightened </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=985">ever after, still also in the staff MLE room because the fairy Asari had forgotten to rotate </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=995">her credentials. And so something we can all take away is ad astra per aspera. This is </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1001">kind of like my personal motto. It means the stars through difficulty. We're all going </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1006">to deal with this stuff. We're all going to have this happening. And it's up to us to </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1011">embrace it. So thank you. I want to say a couple of thank yous before I go. That was </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1017">my talk. First of all, enormous thank you to all the Norm Conrad organizers, Gania, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1023">Ben, Jeremy, and Roy. The amount of late nights, the amount of time spent, the love and effort </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1028">put into this conference is amazing. I hope everyone sees it and enjoys it. We had so </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1034">much fun planning it, and we hope you all love it too. Thank you to the emcees and moderators. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1040">Again, these people are, to my knowledge, not being paid for any of this. Everybody </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1044">is doing it for fun and for love. And I'm excited to share this with you. Thank you </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1049">to the speakers who I also voluntold to speak. I'm excited to hear what you're going to talk </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1055">about. Thank you to our sponsors. If you are in Slack, you can come visit their booths. </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1060">And they're all on our website. Thank you to our lightning speakers who led the way </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1064">for the pregame to the conference and who had some amazing talks. Thank you to Numfocus, </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1071">who make the tools that we use and who we're donating the optional donations of the conference </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1077">to. And finally, thank you to you. This event would be nothing without the spirit of the </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1083">data community, with everyone that works on this stuff, that contributes to it, and that </a><a href="https://www.youtube.com/watch?v=C9OlkY87vf8&t=1087">builds on it every day. Welcome to NormCon! </a>
+      </p>
+    </div>
+  </section>
+  </body>
+</html>

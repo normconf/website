@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Normconf: How should I represent the intermediate thing? -   Brianna McHorse Transcript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Transcript of How should I represent the intermediate thing? -   Brianna McHorse from Normconf" />
+  <meta property="og:title" content="Normconf: How should I represent the intermediate thing? -   Brianna McHorse Transcript" />
+  <meta property="og:url" content="https://normconf.com" />
+  <meta name="og:description"
+    content="Transcript of How should I represent the intermediate thing? -   Brianna McHorse from Normconf" />
+  <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="normconf.com" />
+  <meta name="twitter:creator" content="@normconf" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background-image: url('images/background_placeholder.png');
+    }
+
+    .hero {
+      background-color: None;
+      color: #797979;
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    a:link {
+      color: #4200be;
+    }
+
+    a:visited {
+      color: #4200be;
+    }
+
+    a:active {
+      color: #ef028c;
+    }
+
+    a:hover {
+      color: #ef028c;
+    }
+
+    a.light_link:link {
+      color: #ef028c;
+    }
+
+    a.light_link:visited {
+      color: #4200be;
+    }
+
+    a.dark_link:link {
+      color: #ef028c;
+    }
+
+    a.dark_link:visited {
+      color: #ef028c;
+    }
+
+    a.dark_link:active {
+      color: #5fffcf;
+    }
+
+    a.dark_link:hover {
+      color: #5fffcf;
+    }
+
+    a.on_pink:link {
+      color: #5fffcf;
+    }
+
+    a.on_pink:active {
+      color: #6017af;
+    }
+
+    a.on_pink:hover {
+      color: #4200be;
+    }
+
+    .navbar.is-dark .navbar-end>a.navbar-item:hover {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-item {
+      white-space: normal;
+    }
+
+    .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-brand>a.navbar-item:hover {
+      background-color: #6017af;
+    }
+
+    .button.is-danger {
+      background-color: #ef028c;
+    }
+
+    .button.is-primary {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+
+    table.speakers1 {
+      font-weight: bold;
+      color: #4200be;
+      width: auto;
+    }
+
+    table.speakers2 {
+      font-weight: bold;
+      color: #6017af;
+      width: auto;
+    }
+
+    table.schedule {
+      font-weight: bold;
+      /* width: auto; */
+    }
+
+    table.schedule td {
+      text-align: center;
+      padding: 0.5em;
+      max-width: 30em;
+      /* word-wrap: break-word; */
+    }
+
+    table.schedule tr:nth-child(odd) {
+      color: #4200be;
+      background-color: #00000017;
+    }
+
+    table.schedule tr:nth-child(even) {
+      color: #6017af;
+    }
+
+    .message.is-primary .message-header {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+  </style>
+  </head>
+  <body>
+  <section class="section" style="background-color: #6017af;">
+    <div class="container">
+    <div class="box">
+      <h1 class="title">
+        How should I represent the intermediate thing? -   Brianna McHorse
+      </h1>
+      <p class="subtitle">
+        Transcript generated with <a href='https://github.com/openai/whisper'>OpenAI Whisper</a> <code>large-v2</code>.
+      </p>
+      </div>
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=0">This is about how to represent the intermediate thing because Vicky said she wanted talks </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=5">about the day-to-day work of machine learning. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=9">I spend so much of my time sitting, staring at a couple of functions that I have maybe </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=14">stubbed out going, okay, but like, should I use a dictionary? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=18">Should I use a custom class? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=20">And this talk is my attempt to articulate some of the thought patterns that I use for </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=24">figuring that out. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=29">So data structures are often really clear at the beginning and end of whatever it is </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=34">that you're doing. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=35">So in my case, I work on our platform. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=39">And so this is often API boundaries. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=41">I know what's coming in and I know what's going out. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=44">Partly because I have had a lot of design discussions about it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=47">It's been ironed out. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=49">We've thought it through very carefully. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=51">Here's an example of an endpoint that I wrote where I have a bunch of data about a game. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=57">My company makes an interactive narrative game that you can play with your friends. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=62">So we have a bunch of data about the game and what's going on. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=65">I need to return a ranked list of the best words for the situation with some metadata </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=71">about those words and why they're ranked that way. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=73">Okay, cool. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=75">That's very well defined. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=79">But then at the next step, I feel like everything kind of drops off and it's easy to expect </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=85">that how to structure things in between should be obvious. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=90">But it's not, actually. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=92">Or if it is, please tell me. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=94">Because I missed that memo. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=95">If it is obvious, it might not even be the best thing. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=99">For example, you might be following patterns that are used everywhere else in the codebase. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=104">Which is good for consistency, but it doesn't mean it's the right thing to use there. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=108">Or maybe you are in a very strong habit of always, I don't know, making a list and appending </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=113">to the end of the list and that's all you ever do. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=117">Also the problems don't usually perfectly match basic Python data structures. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=121">So if you go Google, as I did once upon a time as a baby software engineer, because </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=126">I was a data scientist and I wanted to get better at software engineering, how do I pick </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=130">a Python data object? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=132">What you wind up with is like, okay, pick a list, if it's okay being mutable and you </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=139">want to sort it, pick a tuple. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=141">I hate saying words out loud that people disagree on pronunciation. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=144">I'm going to say tuple. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=147">Pick a tuple if it needs to be immutable. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=149">Write a custom class if you need to define methods and stuff. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=151">But it never matches up that well. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=154">I so rarely have a machine learning engineering problem where, oh, the thing I need to do </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=160">is have a chunk of things that are all the same type and are immutable and that solves </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=165">my problem. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=167">Great. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=169">So it gets complicated and often bane of my existence. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=173">Multiple ways will usually work. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=175">So it's kind of about picking the best one and the one that works for what you're trying </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=181">to do. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=182">So getting it wrong, at least in my world, is not really the end of the world. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=185">It's annoying. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=187">It causes friction. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=188">It will waste time. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=189">And I don't like doing that. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=191">So I would rather figure out how to do it right off the bat. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=195">Ultimately this isn't a coding problem. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=197">This is a decision making problem. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=199">It's about how you access and associate information. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=204">Because at least for now, it's still mostly human brains that are reading and writing </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=208">the code. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=209">There's Copilot. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=210">But, like, you still have to be able to understand what's going on and you or some unfortunate </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=215">colleague is going to have to debug what's going on. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=218">So it makes sense to start with how you are associating the information you're working </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=224">with. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=226">So start with what you know. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=228">Write down all of your needs and constraints. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=231">By which I mean literally physically write it down. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=234">There are things you have in your head and things you have in front of you in the physical </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=239">world. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=240">Those are very different things. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=242">And the ones in your head are a lot more fuzzy than you might think they are until you try </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=246">to write them down. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=248">So no matter how silly it feels, if you are looking at this kind of problem, get everything </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=254">in your head out of your head as messily as you need to. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=257">My researcher and designer friend tells me this is called an affinity map, if you would </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=261">like something interesting to Google. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=264">Basically just get everything you know onto the page, move it around, figure out explicitly </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=269">how you make those connections. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=272">And that's a really good starting point for finding a common thread that runs through </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=275">it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=276">Especially if you're trying to do a fairly complicated set of things that are kind of </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=281">hard to hold in your head at once. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=284">So for example, that endpoint that I showed earlier, I need to go get a bunch of words, </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=289">score them for a variety of metrics, and then sum all that up into a weighted sum and sort </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=296">the list and return it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=297">That's not too many steps, but you wind up needing to access it in several different </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=302">ways. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=303">I just got a visit from my dog. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=305">This is Fury. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=306">Come say hi. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=308">Come on. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=309">This is Fury, everyone. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=312">The next thing that I prefer to think about is how sure are you? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=319">This is my accidental argument for cowboy code. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=322">But consider it cowboy code. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=325">Because when you are committing to more structured and more rigid data types, so in this case, </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=330">I'm talking about, like, defining a custom class instead of using a dictionary, you get </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=336">certain benefits from that. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=337">You get more certainty and predictability in how things will break. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=343">You can access things a little easier sometimes. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=346">But you need to be more sure because it's going to be more of a pain in the butt to </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=348">make a change. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=350">I have shot myself in the foot with this several times, trying to get too precise too soon </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=357">and then having to go rewrite it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=358">And it's annoying. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=363">So just go with the least committed you can get away with. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=367">I do want to caveat that this is I work for a startup. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=372">I'm not writing financial software. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=375">My goal is to write good code efficiently and not spend more time than it needs to have. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=382">So staying a little bit flexible in the first layer of implementation can actually be really </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=387">helpful. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=390">And harder to make a change, not as in literally you can't do it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=393">It just takes time and refactoring. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=397">Once you know how sure you are, my best piece of advice is to make the code match your brain. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=404">Humans index things by name pretty intuitively, which is why I love Python dictionaries. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=410">It is so much easier to say, you know, give me words.genrescore than words at the whatever-eth </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=421">element of the tuple or list that you've stuck on there. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=427">Honestly this whole talk could have just been titled dictionaries are the best. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=430">Probably use those if you're in doubt. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=433">They offer a really nice balance of ease of access. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=440">You have some methods that let you be a little more careful and defensive. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=445">You can use get for carefully checking to see if something exists in the dictionary. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=451">You can use a default dictionary if you do want to accumulate things as you go. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=456">I am a dictionary fan. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=459">And again, there are usually several ways to do this. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=462">I find that pair programming is really great for not going down the rabbit holes of I could </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=467">do it this way or I could do it this way. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=470">But this is why that step where you write everything down is very helpful because you </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=475">can start to extract patterns for how you're thinking about it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=483">The next point I have is on the next slide. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=486">Which is that you should blend data structures if you need to. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=488">And that's part of making that code match your brain. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=491">So the example I was just thinking of is when I'm thinking about words, specifically the </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=497">words that I'm talking about in the example problem that I gave with the API spec, I tend </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=502">to think about them in terms of the word string itself and the part of speech. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=507">That's just like the easiest unique way of identifying the words. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=511">Often I need to access the whole word object, which has other metadata in it, in order to </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=517">do stuff. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=519">There's no reason you can't make a dictionary where the key is that tuple of word string </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=524">and part of speech and the value is the entire word object. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=531">Because that's how I think about the problem. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=533">That's how I think about solving the various intermediate steps I need to do, making the </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=539">calculations I need to make. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=542">And so if I make the data structure match that, the whole thing flows and I'm much more </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=545">likely to catch if I have missed some detail about how I needed to organize it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=552">Again, you can tell I'm working for a little startup. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=558">Care about performance later. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=559">Seriously. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=560">You need to care about performance. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=563">Going down too many rabbit holes at once makes you code in circles. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=567">You will get halfway down figuring out the correct data structure for the problem at </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=572">hand and then you'll start going, okay, wait, but like is that going to parallelize well? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=578">Will I be able to submit this to some other thing? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=580">Like don't. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=581">Just get it all the way ironed out. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=585">Because then you have a first draft to optimize against. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=590">It is so much easier to evaluate the pros and cons of a structure you have chosen and </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=595">written down than halfway thinking through three or four different ones. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=607">I would just like to point out that nobody has this solved or it would be automated as </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=610">a refactoring tool in PyCharm and also Copilot would provide it for you. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=615">Part of my grand goal for this talk was to write a flowchart and I could be famous on </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=620">the internet forever. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=621">I could sell it like flashcards. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=626">It would just have a series of questions and you would go all the way to the end and it </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=629">would tell you what data structure to use. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=633">Maybe someday. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=635">But it turns out that what you actually need is to think about how your brain thinks about </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=641">your particular data and you'll start to see patterns. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=645">Like I said, a lot of the stuff I do lately has to do with associating words with other </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=650">things. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=651">Dictionaries lend themselves really nicely to that. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=653">So when in doubt, I just use a dictionary. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=655">You will probably also eventually wind up with shorthands for your flavor of data. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=661">But if you do have it automated, let me know. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=665">And this is a fractally repeated process. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=668">So what do you have? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=670">What do you need? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=671">And how are you going to access what you need out of the data and the objects to get there? </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=677">This applies at the API interface level. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=679">What's going in, what's coming out. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=681">This applies with any major function that's happening behind that endpoint. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=686">And it applies to each smaller function within there. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=689">So to take the word score ranking examples and apologies for not having any outlined </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=695">code examples on the slide. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=697">Like I said, the internet ate them. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=701">For each of those words, I need to get scores for a handful of different metrics. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=705">I want to normalize those scores within a metric. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=708">Which means that I need to have all of those scores at once. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=713">So that might influence okay, I probably don't want to accumulate it only by word and then </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=720">make it hard to get out again all of the scores for a particular metric. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=726">So like all of the genre scores. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=727">I'm going to need those all at once. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=730">And if you do this at each layer, it usually becomes pretty clear how to structure the </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=735">things that you're starting with. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=738">Okay. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=740">I would like to end with some of my heuristics. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=743">I just told you it's not a solved problem and I am absolutely going to throw some hot </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=747">takes out here. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=749">Use a dictionary if you're a human with a human brain. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=752">This is always my starting point. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=755">Default dicks, as I mentioned, are really nice if you want to smoothly add things as </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=759">you go. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=760">I actually used this for those word scores because I didn't want to set in stone what </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=765">the scoring metrics were going to be. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=767">We might add some others and some words might not have all of them. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=771">I didn't want it to blow up if I needed to add a new score. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=776">Classes are great if you have put more thought into what you're doing. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=781">If you're more sure about it, go ahead. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=783">Use a class. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=785">I love Pydantic because I am a massive typing fangirl. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=791">I convinced my entire data science team to adopt type annotations in my first real job. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=797">It was great. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=799">But classes kind of lock you in a little bit more. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=803">Lists are great for if you have stuff, you might want to sort it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=807">You don't care if it's mutable. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=808">Everyone has been bitten by the mutable lists bug that they accidentally wrote into their </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=812">code and if you haven't, your time will come. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=817">Tuples are great if they need to be immutable. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=820">They're not going to change. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=822">I only use them if I only have a few things because you can't really access them intuitively. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=829">You're accessing them by index unless you use a named tuple. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=834">So I don't think those are great for collecting long sets of things. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=840">I will be honest, every time I think I'm going to use a named tuple, I wind up using a dictionary </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=844">or a lightweight custom class. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=847">I go in one direction or the other. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=848">I guess in that situation, if your data really need to be immutable, it might work. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=854">But I would love to hear from people who actually use these on a regular basis because I always </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=858">want to and I always wind up not doing it. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=862">So these are my heuristics. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=864">I would love to hear everyone else's. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=866">Help your own, you'll get a feel for the kinds of data you work with. </a><a href="https://www.youtube.com/watch?v=5JvQFKkR9k0&t=871">Thank you. </a>
+      </p>
+    </div>
+  </section>
+  </body>
+</html>

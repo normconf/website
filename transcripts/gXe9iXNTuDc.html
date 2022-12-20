@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Normconf: ML doesn't always replace rules, sometimes they work together - Jeremy Jordan Transcript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Transcript of ML doesn't always replace rules, sometimes they work together - Jeremy Jordan from Normconf" />
+  <meta property="og:title" content="Normconf: ML doesn't always replace rules, sometimes they work together - Jeremy Jordan Transcript" />
+  <meta property="og:url" content="https://normconf.com" />
+  <meta name="og:description"
+    content="Transcript of ML doesn't always replace rules, sometimes they work together - Jeremy Jordan from Normconf" />
+  <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="normconf.com" />
+  <meta name="twitter:creator" content="@normconf" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background-image: url('images/background_placeholder.png');
+    }
+
+    .hero {
+      background-color: None;
+      color: #797979;
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    a:link {
+      color: #4200be;
+    }
+
+    a:visited {
+      color: #4200be;
+    }
+
+    a:active {
+      color: #ef028c;
+    }
+
+    a:hover {
+      color: #ef028c;
+    }
+
+    a.light_link:link {
+      color: #ef028c;
+    }
+
+    a.light_link:visited {
+      color: #4200be;
+    }
+
+    a.dark_link:link {
+      color: #ef028c;
+    }
+
+    a.dark_link:visited {
+      color: #ef028c;
+    }
+
+    a.dark_link:active {
+      color: #5fffcf;
+    }
+
+    a.dark_link:hover {
+      color: #5fffcf;
+    }
+
+    a.on_pink:link {
+      color: #5fffcf;
+    }
+
+    a.on_pink:active {
+      color: #6017af;
+    }
+
+    a.on_pink:hover {
+      color: #4200be;
+    }
+
+    .navbar.is-dark .navbar-end>a.navbar-item:hover {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-item {
+      white-space: normal;
+    }
+
+    .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-brand>a.navbar-item:hover {
+      background-color: #6017af;
+    }
+
+    .button.is-danger {
+      background-color: #ef028c;
+    }
+
+    .button.is-primary {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+
+    table.speakers1 {
+      font-weight: bold;
+      color: #4200be;
+      width: auto;
+    }
+
+    table.speakers2 {
+      font-weight: bold;
+      color: #6017af;
+      width: auto;
+    }
+
+    table.schedule {
+      font-weight: bold;
+      /* width: auto; */
+    }
+
+    table.schedule td {
+      text-align: center;
+      padding: 0.5em;
+      max-width: 30em;
+      /* word-wrap: break-word; */
+    }
+
+    table.schedule tr:nth-child(odd) {
+      color: #4200be;
+      background-color: #00000017;
+    }
+
+    table.schedule tr:nth-child(even) {
+      color: #6017af;
+    }
+
+    .message.is-primary .message-header {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+  </style>
+  </head>
+  <body>
+  <section class="section" style="background-color: #6017af;">
+    <div class="container">
+    <div class="box">
+      <h1 class="title">
+        ML doesn't always replace rules, sometimes they work together - Jeremy Jordan
+      </h1>
+      <p class="subtitle">
+        Transcript generated with <a href='https://github.com/openai/whisper'>OpenAI Whisper</a> <code>large-v2</code>.
+      </p>
+      </div>
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=0">My name is Jeremy Jordan, and I'm a machine learning engineer at Duo Security, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=5">and as been mentioned, also one of the organizers of the conference. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=9">So thank you all, everyone for coming out. Thank you all to the speakers that have given </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=14">some wonderful talks today. It's really, really exciting to see everything coming together. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=19">So today I will be talking about machine learning and rules engines and how they can work together. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=25">So let's start by walking through the life cycle of a typical machine learning project. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=34">Let's pretend that we work at an email company and a product manager comes to us and says, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=38">hey, users are complaining about spam. Can you filter out those messages? </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=43">And so we say, yeah, sure thing. And we get to it. So where do we start? The kind of like the </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=50">standard advice is to start with a rule-based approach and deploy that into your product. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=55">This is literally rule number one on Google's great guide to machine learning. And there's a </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=62">good reason for that. And that's that machine learning requires ideally labeled data. We don't </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=67">necessarily have the luxury of having that at this stage. So instead, we spend some time to get </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=73">familiar with the problem and build up some domain expertise that we can encode into machine learning. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=79">We can start off by writing a simple rule that looks for spammy keywords in the email body and </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=90">then deploy that into our product. And now that we've rolled out a spam folder into our product </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=97">and are using that heuristic that we just wrote to decide which content should be placed in that </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=102">folder, we can start to observe user behavior. So we can see when users move emails into the spam </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=108">folder. And we can also see when users move emails out of the spam folder back into the inbox. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=116">And just like that, now we have a labeled data set to work with. So now we're cooking. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=122">We have labeled data, a better understanding of the problem we're trying to solve, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=126">and we can go ahead and replace that simple heuristic with a smarter machine learning model </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=131">to identify spam. So we'll take that data that we observed from user interactions in our product, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=139">instantiate a model, fit it to our data. Great. Now we have a model that we can use to replace </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=144">that heuristic that we deployed in the first iteration to now improve our product. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=152">However, I've learned that it doesn't always work this way. And specifically, I've been working in </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=160">the field of cybersecurity for the past five or so years. And working as a machine learning </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=165">engineer, just for some context in cybersecurity, I've mainly been focused on threat detection tasks. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=170">So this is things like detecting phishing URLs or malware attachments and emails, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=175">and trying to identify when bad actors might be trying to log into your accounts. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=181">And threat detection exists in an adversarial environment. As we get better about detecting </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=189">and blocking malicious content, threat actors find new vulnerabilities to exploit. This means </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=196">that the threat landscape is constantly changing, and we need to be able to keep up with those </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=201">evolving threats. And spoiler alert, this is typically done using both tools and machine </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=207">learning, since they each have their own unique advantages, which I want to touch on. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=212">So, let's talk a little bit about rules. Rules are honestly pretty great. They allow us to </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=222">directly encode our domain knowledge about threats and the threat landscape in the rules that we </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=229">write. We can also easily update those rules to fix false positives quickly when, you know, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=237">like a customer complains about something getting blocked. Hopefully, you haven't experienced this </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=241">personally, but blocking benign content can be very disruptive, and we definitely want to be able </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=247">to make sure that we can remediate those false positives quickly after we learn about them. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=255">Rules also allow us to react quickly to new threats. We may learn about a new threat through </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=260">a research briefing and want to provide protection against that threat before we actually see that </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=266">threat in our product data. And if you're curious, like, how that might work, a lot of research </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=272">briefings will include useful information. They call it indicators of compromise, think </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=277">hashes of known bad files, for example, that we could use to quickly write a rule. So, you know, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=283">just to give you an example, here's a recent threat research report on some new malware variant, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=288">along with some of the file hashes that we could use to detect known samples. And then, finally, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=297">rules have interpretable logic, which makes it easier to understand and fine tune the rule, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=303">and we can look at a given rule and kind of reason about why it classified a piece of content </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=308">a certain way. But machine learning is also pretty great. It's much better at generalizing </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=317">to unseen data. And this is useful in a variety of settings. I've built threat hunting tools that </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=322">leverage machine learning and semantic search that let a threat researcher say something like, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=328">here's some malicious content that I'm interested in. Can you show me similar examples? Or maybe, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=333">can you show me examples that have this particular aspect in common? And this can be very useful for </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=339">tracking the evolution of malware, for example, over time, as, you know, those files evolve and </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=345">are changed to try to evade detections. These models can also be useful for, you know, kind of </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=352">just like being able to learn more nuanced, complex decision boundaries than rules might be able to, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=358">and allow us to discover new threats when we're using them for, you know, classifying malicious </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=364">content. And part of that's because, you know, as I mentioned, we're often very sensitive to false </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=371">positives. So we have to write, when we're crafting rules, we have to make sure that they're </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=374">very high precision. So those rules can usually end up carving out like very narrow areas in </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=380">feature space. So sometimes, like kind of like my mental model is like a model can help fill in some </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=386">of those gaps. And another nice thing about machine learning is we can automate the process of </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=393">figuring out the proper detection logic. So this is simplifying things a bit. But like, you know, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=398">as long as you have a labeled data set, you can kind of let computers figure out the rest as far </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=403">as like classifying that malicious content goes. And then that aspect becomes very powerful as we </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=412">continue to collect data from product usage, as it enables us to easily retrain our models </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=418">and improve them over time as we collect more data. And that's one thing that you can't really </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=423">do with rules. You can't necessarily take recent product data and call fit on a rule to make it </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=428">better. And then finally, I'd argue that the maintenance costs scale better than rules. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=438">The maintenance costs for machine learning scales better than rules. I think rules can be great for </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=443">simple logic and capturing low hanging fruit. But you can reach a certain complexity where </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=449">it starts making a lot of sense to leverage machine learning. And so from another perspective, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=456">just to kind of like help visualize this, if we were to look at a precision recall curve, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=462">one of the ways I think about this is kind of rules helps us capture some of the low hanging fruit </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=466">and capture threats that are easy to express in a rule. But adding in machine learning to the mix, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=474">we're able to kind of push out that Pareto frontier and detect more malicious content. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=480">And again, when we're making locking decisions based on threats, we have to make sure that we're, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=485">you know, we have extremely high precision. So in practice, adding machine learning models to </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=492">complement the rules really helps us kind of like push out our recall and stop more threats from </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=497">causing users harm. But ultimately, these two systems are strongest when they're used together. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=505">And I think that's the really important point that I want to emphasize here is that each of </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=511">these two systems have different perspectives on the data. And combining those perspectives gives </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=517">us a unique vantage point. We're able to look at subsets of the data where the model and rules agree </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=523">as well as highlighting subsets of the data where the two systems disagree. And those disagreements </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=529">or discrepancies are really useful tool for triaging human review of data, where we can </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=534">investigate and, you know, go in and attach like a ground truth label to that example. So, for </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=541">example, we can look at a mocked up discrepancy feed here, which compares the outputs of a rules </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=548">engine and a model prediction. And we're able to surface data where the two systems are disagreeing. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=554">Humans can then come in and review this discrepancy feed and attach an ultimate </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=559">ground truth label to resolve the disagreements and improve the individual detection systems. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=565">So, for example, we have a row here where the rule classified the data as malicious, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=570">but the model said it was benign. And after human review, we concluded that it was in fact benign. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=576">In this case, we now know that we need to go fix that rule to reduce its false positive rate. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=583">And then in this case, we have a rule also classifying a piece of content as malicious, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=588">where the model says it's benign. And after human review, we concluded that it is in fact </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=594">a malicious piece of content. And so, we'd want to take that example and maybe some other similar </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=599">examples, make sure they're all labeled, and then include that in some of our training sets, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=605">so we can retrain that model and improve that model's performance. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=608">Ultimately, to build kind of an effective threat detection system, we need to have a layer defense. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=614">And this includes some manual effort, kind of exploring the data and hunting for threats, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=619">developing rules to encode our domain knowledge of the threats that exist, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=623">and training models to help scale our detection of malicious content. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=628">We can leverage discrepancy feeds to help improve our rules and machine learning models. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=633">And ideally, we can also capture user data and feedback and incorporate that data in our model </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=638">training as well. So, hopefully, you can start to gain an appreciation for the values of both </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=646">rules and machine learning in a threat detection system. And one topic that I've been thinking </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=651">about a lot lately is how we can make this all work well together. So, I'll talk through a couple </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=656">things that I've been thinking about in the past. One is the idea of a single-use model. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=661">So, I'll talk through a couple things that I've been thinking about here. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=666">The first is being able to package rules and machine learning models such that they </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=671">look similar at inference time. And this allows us to easily start with a rule and deploy that </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=678">out for a given threat, but just as easily introduce machine learning models kind of in </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=682">parallel as we've collected more labeled data into our detection stack. And there's a really </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=690">cool library by one of our Norm Comp speakers today, Vincent, called Human Learn, which basically </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=697">lets you craft rules and wrap that into a scikit-learn interface. So, if you're at all </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=704">interested, I highly recommend you check it out. Vincent has some great examples and documentation </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=710">to get started on that. And I think it's a very interesting kind of like library and approach to </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=717">making inference look the same. I also think it's incredibly valuable to be able to track </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=725">and evaluate these models and heuristics using common infrastructure. So, after writing a rule, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=730">you should be able to run it through an evaluation set and capture important metrics for that model </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=734">at the time that you authored that rule. And then after training a machine learning model, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=739">we can run it through that same evaluation set, capture those same important metrics that we care </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=744">about, and all of our experimentation data and context can easily be stored and discovered in </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=751">a single tool. And then this can also carry over into something like a model registry, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=758">or I guess in this case, a model plus rules registry, where we can link artifacts back to </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=765">all the data that we have in our experiment tracking system, as well as have a kind of </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=769">centralized control plane for rolling out new artifact versions to production. And this can </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=774">be really useful in quickly answering questions like what models are deployed right now? Did we </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=780">make updates to that one heuristic? And this detection rule seems to be firing a lot. How </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=785">often did it fire in our evaluation set? And then finally, when we have multiple systems </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=794">making judgments about a certain piece of content, we need to be able to combine those outputs into </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=799">a single decision. So this concept of a policy layer, which is kind of responsible for defining </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=806">how those outputs should be combined, becomes important. And in some cases, the policy might be </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=814">super simple, like just a logical or a statement. So if any subsystem classifies a piece of content </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=821">as malicious, then we'll go ahead and block it. Or in other cases, you might have some more complex </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=828">logic here, such as scenarios where you may not trust the machine learning model's output. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=832">Like maybe that machine learning model has low certainty on a specific piece of data, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=838">and you want to be able to fall back on the rule system's output. Or let's say the machine </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=843">learning model has a false positive that a customer reported, and you want to be able to </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=848">very quickly remediate that. You might want to be able to override the model's prediction </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=854">for that specific scenario in the policy layer. </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=860">And ultimately, I think as we take a step back to kind of look at the big picture, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=866">machine learning exists as a part of an overall threat detection system. So if you were just </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=871">listening in to Peter's talk, I thought it was a really great point about kind of like, you know, </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=875">machine learning is the carbon fiber material. And you wouldn't build an entire bridge out of </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=881">carbon fiber, but it's a very useful material that you can use. So in my experience, I haven't </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=888">actually seen the scenario where we replace some initial rule-based logic with the machine learning </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=894">model. Instead, the two systems, at least for threat detection scenarios, the two systems kind </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=900">of work together in a symbiotic fashion. All right, that's all I've got for today. I hope </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=908">you found it interesting to kind of learn a little bit more about the world of threat detection and </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=913">how rules and machine learning models can work together to improve the overall threat detection </a><a href="https://www.youtube.com/watch?v=gXe9iXNTuDc&t=918">system. </a>
+      </p>
+    </div>
+  </section>
+  </body>
+</html>
