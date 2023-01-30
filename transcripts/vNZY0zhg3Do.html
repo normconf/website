@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Normconf: Tracer bullets + working backwards: simple framework for solving problems - Caitlin Hudon Transcript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Transcript of Tracer bullets + working backwards: simple framework for solving problems - Caitlin Hudon from Normconf" />
+  <meta property="og:title" content="Normconf: Tracer bullets + working backwards: simple framework for solving problems - Caitlin Hudon Transcript" />
+  <meta property="og:url" content="https://normconf.com" />
+  <meta name="og:description"
+    content="Transcript of Tracer bullets + working backwards: simple framework for solving problems - Caitlin Hudon from Normconf" />
+  <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="normconf.com" />
+  <meta name="twitter:creator" content="@normconf" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background-image: url('images/background_placeholder.png');
+    }
+
+    .hero {
+      background-color: None;
+      color: #797979;
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    a:link {
+      color: #4200be;
+    }
+
+    a:visited {
+      color: #4200be;
+    }
+
+    a:active {
+      color: #ef028c;
+    }
+
+    a:hover {
+      color: #ef028c;
+    }
+
+    a.light_link:link {
+      color: #ef028c;
+    }
+
+    a.light_link:visited {
+      color: #4200be;
+    }
+
+    a.dark_link:link {
+      color: #ef028c;
+    }
+
+    a.dark_link:visited {
+      color: #ef028c;
+    }
+
+    a.dark_link:active {
+      color: #5fffcf;
+    }
+
+    a.dark_link:hover {
+      color: #5fffcf;
+    }
+
+    a.on_pink:link {
+      color: #5fffcf;
+    }
+
+    a.on_pink:active {
+      color: #6017af;
+    }
+
+    a.on_pink:hover {
+      color: #4200be;
+    }
+
+    .navbar.is-dark .navbar-end>a.navbar-item:hover {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-item {
+      white-space: normal;
+    }
+
+    .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-brand>a.navbar-item:hover {
+      background-color: #6017af;
+    }
+
+    .button.is-danger {
+      background-color: #ef028c;
+    }
+
+    .button.is-primary {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+
+    table.speakers1 {
+      font-weight: bold;
+      color: #4200be;
+      width: auto;
+    }
+
+    table.speakers2 {
+      font-weight: bold;
+      color: #6017af;
+      width: auto;
+    }
+
+    table.schedule {
+      font-weight: bold;
+      /* width: auto; */
+    }
+
+    table.schedule td {
+      text-align: center;
+      padding: 0.5em;
+      max-width: 30em;
+      /* word-wrap: break-word; */
+    }
+
+    table.schedule tr:nth-child(odd) {
+      color: #4200be;
+      background-color: #00000017;
+    }
+
+    table.schedule tr:nth-child(even) {
+      color: #6017af;
+    }
+
+    .message.is-primary .message-header {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+  </style>
+  </head>
+  <body>
+  <section class="section" style="background-color: #6017af;">
+    <div class="container">
+    <div class="box">
+      <h1 class="title">
+        Tracer bullets + working backwards: simple framework for solving problems - Caitlin Hudon
+      </h1>
+      <p class="subtitle">
+        Transcript generated with <a href='https://github.com/openai/whisper'>OpenAI Whisper</a> <code>large-v2</code>.
+      </p>
+      </div>
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=0">So in the spirit of NormCop, I thought that we could kick off with a good vintage tweet, which happens to be a favorite of mine. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=8">A wise man once pointed out that when you find yourself doing the same thing multiple times, you should move toward automation. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=15">I love Dave's second point here, which is when you find yourself answering the same questions, you should consider automating your advice. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=23">Today I want to talk about frameworks for efficiently conquering the unknowns that stand between us and getting things to production. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=32">So these are things that I've seen happen over and over again, and I'm trying to come up with some ways to combat some of the unknowns as we're starting new projects. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=43">For example, taking a machine learning model from idea to production often involves similar steps. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=49">So the data and the specific application might vary from project to project. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=53">But I know that at some point I'll have to get out, get some data, spin up a notebook and build something. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=59">And I can't fully automate that process, but I can find patterns in some of the thinking that drives each step and try to get more efficient that way by focusing on some of the patterns I'm seeing. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=71">The best way I've found to automate things that don't fit into a function or a package is via frameworks. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=77">And so that's why I want to talk about frameworks today. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=79">Frameworks are especially helpful for automating workflows around organizing my thinking and working through problems. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=88">They're boring, but they work really well and they make my life easier because I don't have to remember things. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=93">And so I feel like they're very norm-conf. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=98">I'm at Figma now, but previously worked at Online Med Ed, which is a medical education company, and they created hundreds of online videos on various topics to advance a flipped classroom model. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=109">In order to scale, we had to match our curriculum to that of med schools and governing bodies to make sure that our material covered all of the same points that they expected us to cover. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=120">This was a really fun problem because as Tolstoy foretold, each unique syllabus is unique in its own way, which in this case means that lessons are named very differently. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=131">They're parceled out differently in terms of how they're covered across different syllabi, and they definitely didn't match the lesson names that we had in our training data. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=140">So the manual version of matching syllabi with our curriculum involved a very knowledgeable medical subject matter expert reading a lesson and some of its key points on the syllabus, </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=152">then searching on our site, which included keywords but not like the full text of all of the videos, </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=159">and scrubbing through those videos that matched to see if it was really a match and how fully it covered each of the lesson sub points. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=169">You can imagine this is not ideal, and so we thought that maybe automating this matching process via machine learning would be really helpful. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=178">So here we've outlined this tool that would give the person the top end lessons to check first based on looking at the full content of each of the videos. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=189">And so this would significantly improve our ability to scale the process. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=194">And so this is what we proposed. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=197">This was the first machine learning model that we built at Online Med Ed, so there was a ton of uncertainty around the project. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=205">The biggest open question being like not knowing whether the type of classification we wanted to do would even work with our data, </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=213">like was our data big enough and unique enough at the lesson level to actually do classification was a very open, important question. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=221">At the time, we were also doing a big rewrite of our code base, so there were also questions around where the model would eventually live and dependencies and whether we would be able to roll it out. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=232">Anything that I could do to reduce uncertainty, both for stakeholders and for myself, was really helpful here. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=239">So I wrote a lot of documentation around like inputs and outputs and what those would look like, what the architecture could look like, in order to build buy-in. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=248">Once we had buy-in, we decided that the best course of action would be to build a proof of concept. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=254">And so I decided to try a couple of frameworks out in that process to see if we could do it like quickly than I had, more quickly than I had moved on previous projects. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=265">So with any project model code base, you have a couple of kinds of unknowns. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=270">Known unknowns are the things that you know you don't know. If you started a list of things you don't know, you could slot those things into the list. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=278">These are more manageable than the other kind because being aware of these gaps means that you can plan for them. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=284">In machine learning, this could be knowing that you don't know which type of algorithm you're going to apply or knowing that you'll have to apply data transformations, but not being sure which ones. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=295">Unknown unknowns are the things that you don't know you don't know. So it would be impossible to list those things because your unknown unknowns are by definition unknown to you. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=306">You learn about these things as you're working through problems. And so a lot of them just kind of come up in hindsight. These are things that you didn't know. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=313">In a machine learning context, these could be things like dependencies that you definitely need to consider as you're implementing something, but you weren't aware of ahead of time. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=323">Today we'll focus on two frameworks that help speed up the process of getting ML to production or analyses or dashboards or new features. You can kind of insert your own thing here by efficiently conquering unknowns. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=337">So we'll start by tackling the known unknowns. How do we capture all of those things that we don't know and use that data to be more efficient? </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=345">So we can borrow an idea from professional poker player and master decision maker, Annie Duke. Annie suggests that we start with a pre-mortem. So that's what we'll do. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=356">In order to tackle unknown unknowns, we want to make sure that we're not going to like trip over them. And so we'll dive into the second framework here, which is tracer bullets. We'll talk more about that in a minute. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=371">So we'll start with pre-mortems. What is a pre-mortem? A pre-mortem is an opportunity to predict possible outcomes for a project. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=379">Practically speaking, I think like the benefit you get here is a list of known reasons that a project could fail. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=386">This is a really good time to put all of the known unknowns into a list and figure out if anyone might be able to help you with answering some of those questions. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=395">If there are doom factors that would render a project like a total failure, missing a key deadline, for example, this is a really good place to discuss those things. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=405">I also want to note that I'm kind of framing this as a team exercise, but I found it really helpful to do pre-mortems, even as a solo exercise as I'm starting projects. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=415">I've also found that interviewing subject matter experts and using that as documentation is juice that's very worth the squeeze. So I'll often include pre-mortem-y questions about like where they think there might be areas that we need to be really careful about as I'm working with subject matter experts. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=434">And taking these things together and like building this list is a really good way to take all of the strands of the things that you know and like braid them into a constellation that will guide the work. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=446">So the idea of a pre-mortem is pretty simple. I wanted to show an example. This is Annie Duke's recommended format. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=453">She also adds sections around luck and skill. Coming from poker, she has this really interesting take on decision making and especially in her world you get feedback really quickly. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=464">So she's gotten really good at increasing the quality of her decisions while making really high quantities of decisions. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=471">And so I do like that framing. I didn't include it here, but you could. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=476">If you're thinking that this looks like a prioritization exercise, especially because of that column on the right, I would agree. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=483">Besides like getting the concerns into one place, it also gives you an idea of which places you might want to focus on first. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=491">I love a pre-mortem because I'm very good at guessing how things might fail and this is a rare opportunity to use that talent in a safe place where it is advancing the discussion. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=501">So they give people the opportunity to voice concerns without detracting. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=506">And I think that's super important because concerns are typically evidence of past experiences and learning from experience is one of the best ways for us to be better and more efficient in our work. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=516">So I love writing a pre-mortem. Now that we've accounted for known unknowns through the pre-mortem, we're aware of some things that could go wrong and we know where we might get tripped up. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=528">So armed with that knowledge, we can start building. To do that, we can move to our second framework, Tracer Bullets, for efficiently dealing with unknown knowns. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=539">So last year, our engineering department read The Pragmatic Programmer as a book club. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=545">This is a collection chock full of practical advice built on years of experience and it's solidified itself as an industry classic. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=553">I feel like it's very norm-comp. The stuff in there is not necessarily groundbreaking, but it's a really good read. It's something I wish I had read a lot sooner. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=562">Anyway, I loved it. I highly recommend it. And I've since adapted some of the ideas there for my own machine learning projects. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=570">And so specifically today, I want to talk about the idea of Tracer Bullets, which come from this book. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=578">So outside of a code base, in real life, Tracer Bullets are bullets that are loaded at intervals alongside regular ammunition. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=587">When they're fired, phosphorus ignites and leaves a pyrotechnic trail from the gun to whatever they hit. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=593">So you can see the path that each bullet takes and how close it gets to a given target. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=599">These are particularly useful for quickly refining your aim because they provide real-time feedback under actual conditions. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=607">So you're shooting these alongside anything else that you would be shooting. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=611">When you're building something that hasn't been built before, Tracer Bullets can visually illustrate the need for immediate feedback under actual conditions with a moving goal. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=621">So what does that look like in a code base? This is the visual that's in the Pragmatic Programmer. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=629">So each bar here represents a layer of logic, and you can see the Tracer Bullet goes through each layer of logic. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=638">When it intersects each layer, it carves out a small end-to-end path through all of the layers. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=645">The goal is to get through each layer with the absolute minimum amount of logic required before moving to the next one. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=654">So if we think like Peter in his earlier talk, we can say that we're building a bridge that's cheap enough that it barely stands, but it does stand. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=663">Tracer Bullet code operates in the same environment and under the same constraints that actual code would. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=670">And the focus on using Tracer Bullets in development is to get to the target quickly for more immediate feedback. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=676">Because Tracer Bullets don't require building a full project, they're a relatively cheap way to test an implementation. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=684">And so that's why we wanted to test them with the project I was working on. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=688">So I've translated this a bit to Tracer Bullets in machine learning. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=693">So we might start with a data pipeline, actually getting the data that we need to use, and then work through feature extraction. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=702">How do we make sure that we can get the data to a place where we can put it into a model or algo? </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=707">And then we actually need to build the model or algo and deploy it, start to apply. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=713">In this case, it was doing classifications, so starting to actually do the classification on data and put it into an API or somewhere you can access that and then put like a front end on it. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=725">So how are we going to make sure that we're getting this stuff into the hands of users or whatever system is going to use the outputs? </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=735">A couple of additional notes on Tracer Bullets and like how they're different from prototypes, because this is something I didn't understand until I read it a few times in the book. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=744">With a prototype, you're exploring specific aspects of a final system. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=749">And so you typically will throw that code away and recode properly once the lessons are learned. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=757">So if you've seen something like a design sprint, you kind of want to have something that you can show to stakeholders by the end of the week, and you might not be actually coding a whole thing. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=767">It's really just important that they can see like the UI or the front end or that last step. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=772">This is about answering questions along the way with the implementation. So you're doing like the minimum implementation possible so that you can see how your entire system works end to end. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=785">So Tracer code is lean, but it's complete. And it forms the parts of the skeleton of the final system. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=792">Once you have the skeleton built, I could choose to go work on like the tail for a while or the head for a while or flesh out the middle. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=802">But the entire system will continue to work with the Tracer code framework. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=810">So, this is where I needed to aim my Tracer Bullet. This is a quick architecture diagram from an early stage of the process and kind of what we were doing. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=819">So we have ETL logic, we have SRT files, these are like text files that are taking everything that's being said in a video and transcribing it. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=829">So that's all the text data that we're working with. We need to build logic to process that data and then to train the classifier. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=837">We need to actually get a classifier that works and is good enough for our use case. That was one of those open questions that we had. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=844">And then we need to be able to output the closest lesson. And so this is the example of the stuff that we wanted to deliver. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=852">A lot of this lived in a Jupyter notebook. We actually decided to put like a front end on it so that people could interact with it. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=858">But I think having this clear path for like, I need my Tracer Bullet to go through every single one of these layers was really helpful to answer questions that we had around architecture and like, would this thing even work? </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=872">So firing the Tracer Bullet, we built the data pipeline, did feature extraction, built the classifier, started doing classifications, made sure all of that stuff was up to spec, and then added the front end. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=886">But something important here is like what's left after the Tracer Bullet. So if you look at like the pink area, that would be the part that was included or the part that was coded out as part of the Tracer Bullet. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=897">There is lots left to do at each stage here. So for example, the data pipeline, I didn't grab all of the videos or the files containing like the text transcriptions of the videos. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=909">Some of those were still left on the table. They weren't necessary for the implementation. Feature extraction, some of the work that we were doing around like tokenizing, stemming, etc. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=918">We could change in future iterations, but we had like enough to build a model that was a good proof of concept. The machine learning code, we had a good idea for a model that worked. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=929">Obviously, that's something we could go back and update, but having it as part of the pipeline was really important. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=934">And then the API and the user interface, we were able to get feedback on. And so if there's anything that we needed to change, we'd be able to do that pretty easily. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=944">And so this was really helpful to have an idea of just like we're leaving some things on the table to come back and do. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=951">But also, this doesn't mean that we're waiting, for example, for the entire data pipeline to be built before we're moving on to the next thing. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=958">So the advantage is that you can get to delivering something or shipping something faster, which is really helpful for stakeholder management too, especially if you're working with something where there's a lot of open questions. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=973">I built this slide about tracer bullet driven development. And so this would be like, let's say you had five checkpoints and you were working as part of a team. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=982">If you look at this first approach, this is if we're building sequentially. So we start with like the data sets and then the feature engineering and then the modeling and then serving the model and then having a front end. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=993">That takes a long time before we're actually seeing results and having an idea for whether the thing works or not. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1001">But if we take that same amount of work, if we assume it takes the same amount of work at each checkpoint, </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1006">we can see that we're delivering like a V1, the first checkpoint, and then V2 and then V3 and V4 and V5. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1012">And so from a stakeholder perspective, this was really helpful to be able to say like, oh, look, we have this thing working end to end. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1019">We're going to improve the accuracy. That's no problem. It's just updating information and like steps one, two and three. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1026">So I really liked using the tracer bullets, especially for working with stakeholders and reducing uncertainty for them. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1035">And the other nice thing about using these two frameworks together is so the known unknowns, once you have those and you know the areas that could trip you up, </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1044">you can build your system around them and make sure that they're included as part of the layers for the tracer bullets. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1050">So you kind of know based on those, like what are the layers you need to fire the tracer bullet through? </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1056">And then you're able to fire the tracer bullet, make sure that you're accounting for at least everything you know about. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1062">That gives you the opportunity to find things that you didn't know about because you're actually building it. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1066">That always happens. You're always going to have surprises. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1069">But it gets you from the start of the project to the end of the project a lot faster. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1074">And with some check in points where you can offload information or share information. And I found that really helpful and really exciting. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1081">It's something I want to try more and more with future projects. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1088">And so I wanted to say thank you so much to the NormConf organizers for getting everyone together. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1093">This has been great. I've been watching all morning and loving it. For anyone who wants to learn more about these topics, </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1099">there's a couple of books that I recommend. So I talked earlier about the Pragmatic Programmer. That's a classic. It's really good. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1106">Annie Dupes' Thinking in Bets is also fantastic. She has a couple of other frameworks that I've used. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1112">Things like backcasting. So if you have an idea of what success looks like, similar to like Amazon's PR approach, </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1120">where they start with like, what does the press release look like? And then you work backwards. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1124">She basically applies the premortem but to success. So if we're successful, what are the points that we have to hit along the way? </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1133">So those books are great. And if you want to learn more from me, I'm at Bianna Poesy on Twitter and Rexis.social. </a><a href="https://www.youtube.com/watch?v=vNZY0zhg3Do&t=1140">And I also have a blog at CaitlinHuden.com. </a>
+      </p>
+    </div>
+  </section>
+  </body>
+</html>

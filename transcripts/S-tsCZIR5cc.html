@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Normconf: Three cheers for OpenAPI 3 - Jowanza Joseph Transcript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Transcript of Three cheers for OpenAPI 3 - Jowanza Joseph from Normconf" />
+  <meta property="og:title" content="Normconf: Three cheers for OpenAPI 3 - Jowanza Joseph Transcript" />
+  <meta property="og:url" content="https://normconf.com" />
+  <meta name="og:description"
+    content="Transcript of Three cheers for OpenAPI 3 - Jowanza Joseph from Normconf" />
+  <meta property="og:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:image" content="https://normconf.com/images/normconf_banner_metadata_1000x500.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="normconf.com" />
+  <meta name="twitter:creator" content="@normconf" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <style>
+    body {
+      background-image: url('images/background_placeholder.png');
+    }
+
+    .hero {
+      background-color: None;
+      color: #797979;
+      font-family: sans-serif;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    a:link {
+      color: #4200be;
+    }
+
+    a:visited {
+      color: #4200be;
+    }
+
+    a:active {
+      color: #ef028c;
+    }
+
+    a:hover {
+      color: #ef028c;
+    }
+
+    a.light_link:link {
+      color: #ef028c;
+    }
+
+    a.light_link:visited {
+      color: #4200be;
+    }
+
+    a.dark_link:link {
+      color: #ef028c;
+    }
+
+    a.dark_link:visited {
+      color: #ef028c;
+    }
+
+    a.dark_link:active {
+      color: #5fffcf;
+    }
+
+    a.dark_link:hover {
+      color: #5fffcf;
+    }
+
+    a.on_pink:link {
+      color: #5fffcf;
+    }
+
+    a.on_pink:active {
+      color: #6017af;
+    }
+
+    a.on_pink:hover {
+      color: #4200be;
+    }
+
+    .navbar.is-dark .navbar-end>a.navbar-item:hover {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-item {
+      white-space: normal;
+    }
+
+    .navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: #ef028c;
+    }
+
+    .navbar.is-dark .navbar-brand>a.navbar-item:hover {
+      background-color: #6017af;
+    }
+
+    .button.is-danger {
+      background-color: #ef028c;
+    }
+
+    .button.is-primary {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+
+    table.speakers1 {
+      font-weight: bold;
+      color: #4200be;
+      width: auto;
+    }
+
+    table.speakers2 {
+      font-weight: bold;
+      color: #6017af;
+      width: auto;
+    }
+
+    table.schedule {
+      font-weight: bold;
+      /* width: auto; */
+    }
+
+    table.schedule td {
+      text-align: center;
+      padding: 0.5em;
+      max-width: 30em;
+      /* word-wrap: break-word; */
+    }
+
+    table.schedule tr:nth-child(odd) {
+      color: #4200be;
+      background-color: #00000017;
+    }
+
+    table.schedule tr:nth-child(even) {
+      color: #6017af;
+    }
+
+    .message.is-primary .message-header {
+      background-color: #5fffcf;
+      color: #4200be;
+    }
+  </style>
+  </head>
+  <body>
+  <section class="section" style="background-color: #6017af;">
+    <div class="container">
+    <div class="box">
+      <h1 class="title">
+        Three cheers for OpenAPI 3 - Jowanza Joseph
+      </h1>
+      <p class="subtitle">
+        Transcript generated with <a href='https://github.com/openai/whisper'>OpenAI Whisper</a> <code>large-v2</code>.
+      </p>
+      </div>
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=0">I am excited to talk about OpenAPI 3 today. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=4">As someone who is working on a new company building APIs, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=9">this has been an important specification </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=13">and made my job a lot easier. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=14">I wanted to just give a little intro </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=18">and talk through how exactly it makes my life easier. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=22">For the agenda, I'll talk about why OpenAPI 3 a bit. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=27">I'll talk about my experience building API integrations </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=31">across different fintech domains. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=33">I'll talk about OpenAPI 3 specification, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=36">its history, its use cases. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=39">I will do a demo of some OpenAPI 3 tools, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=44">and then I'll wrap up at that point. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=49">Let's talk for a second about financial APIs. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=53">Some of the most popular financial APIs out there, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=57">like the Stripe API, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=58">which enables you to make payments online. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=62">This API has enabled all sorts of </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=65">new use cases for payments in the world and in apps. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=70">There are also open banking, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=71">so Plaid, Fnicity, these APIs allow you to </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=76">connect to bank accounts and </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=78">programmatically exchange information. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=81">But all of these together can really </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=84">enrich our lives as individuals </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=86">and also our lives as businesses by </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=89">enabling that quick transport of data, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=92">and then enabling new ways to </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=94">look at things like underwriting. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=97">Understanding someone's financial history, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=100">some alternatives to </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=102">our traditional methods of underwriting, for example, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=104">and then other financial instruments as well. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=108">That's what I am building, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=110">and that's why I'm </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=112">interfacing with so many different types of APIs. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=115">I've encountered quite a bit of difficulties with that, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=121">and OpenAPI 3, whenever I </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=124">have a specification for that, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=126">has made things a lot easier. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=128">Let's talk a little bit about RESTful APIs for a second. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=133">In general, this is your basic setup for a CRUD API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=138">You will have five methods, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=141">so a get, a post, a put, a patch, and a delete. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=145">Get should give you a list of that object back. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=152">In this case, if you have slash products on the path </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=156">without the SKU on the end, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=157">that should give you back all the products in that collection. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=163">If you add the SKU to the end, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=165">then that should give you the one product. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=167">Post will allow you to create products. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=170">You should have some body that corresponds to a product, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=173">and you'll be able to create that. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=175">Put would give you a complete update, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=179">so you are replacing that SKU with a new SKU, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=184">but keeping the same ID. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=186">Patch would allow you to update one field, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=189">so a mutation of that data, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=191">and then delete would allow you to delete that data. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=195">This is the philosophical idea </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=199">behind the HTTP and REST APIs. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=203">However, the reality is that </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=206">people don't all implement this the same way. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=209">Some ways that this can go wrong and that API design can be </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=213">hard are small things to big things. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=216">Let's talk about some of the small things. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=218">Let's consider someone who believes </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=222">that instead of making this plural products, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=225">that it should be product. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=227">That's one way that they can do it. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=229">There also may be some APIs that believe that this is </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=233">too robust and too many methods, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=236">and so they might make a post API for everything. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=239">There might be post slash products slash delete, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=243">and then that would take </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=246">over the same effect as a delete HTTP method. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=250">Or you may have the patches and the puts </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=254">and the gets all be implemented in post as well. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=258">Furthermore, you may not want to use </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=262">the path in order to pass this QID. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=266">You may pass it in a header, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=267">you may pass it in a body. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=269">As someone who's integrating with an API, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=273">you get used to the pattern that you see, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=276">and then you go to another API and they </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=278">follow a completely different pattern. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=281">Reusing your code, doing things in a way that is modular, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=286">becomes very difficult and strenuous. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=290">OpenAPI 3 is an attempt to, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=293">one, standardize on how these APIs should look, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=296">and then two, provide some ecosystem around these APIs, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=302">so consuming them is a little bit easier. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=305">OpenAPI 3, what it is, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=309">is a protocol or more specifically, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=314">a machine-readable language agnostic and </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=318">open protocol for REST APIs. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=321">It's a way to describe RESTful web APIs </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=325">in a machine-readable and language agnostic format. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=329">What do you get in return for that is community. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=333">Once things are machine-readable and language agnostic, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=336">many tools will pop up. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=338">You get an ecosystem, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=340">so you get a wider array of tools, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=344">you get them being interoperable, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=346">which is the last point. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=348">As far as the lineage or the composition of OpenAPI 3, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=353">what it is, is essentially JSON schema to </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=357">describe the JSON objects that are </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=359">being passed around over HTTP, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=362">and then some other, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=364">you can call it syntactic sugar </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=367">to explain the rest of things that could happen in a web API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=374">You might wonder how this relates to Swagger. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=378">Swagger actually is, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=379">you can think of it the grandfather of OpenAPI 3. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=383">Essentially, Swagger was the initial attempt to do this, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=387">and then it spun out into something that was more generalizable, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=391">which is what OpenAPI 3 is. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=393">Swagger and OpenAPI 3 are mostly compatible with each other. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=399">You find places where they aren't, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=402">and it's a little bit frustrating. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=406">Let's jump into a demo of some of the OpenAPI 3 tools. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=416">What I have here is Repolit. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=421">Some of you probably have worked with this, but essentially, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=424">I'm just going to go through six different tasks </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=428">with different OpenAPI 3 tools. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=432">First, I'm going to start by taking an OpenAPI 3 specification, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=437">and then consuming it and converting all the endpoints </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=440">into TypeScript interfaces. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=444">Then I'm going to talk a little bit </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=446">about how you can create your own specification, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=449">what that looks like. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=450">Then I'm going to take an existing OpenAPI 3 specification </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=455">and generate a mock server out of it. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=457">Based on the spec, I simply will run a mock server </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=462">and then be able to run some commands against that over Postman. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=468">Then I will talk about how you can take an OpenAPI 3 spec </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=473">and then turn it into a nice documentation </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=475">that you can share with either your customers or friends, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=480">or colleagues. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=481">Then talk about generating a Postman collection </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=486">out of an OpenAPI 3 spec. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=488">And finally, end with generating an SDK. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=491">This is specifically a TypeScript SDK. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=494">TypeScript is just what we've been using for the company. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=498">It's the thing I'm the most familiar with at the moment. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=501">Before I do any of that, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=503">let's just take a quick gander at one of these specifications. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=508">This one is one that I borrowed from this lady named Lorna. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=512">She's trying to make this API that allows you to retrieve </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=516">planets in the solar system. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=519">In this API, you can see she's got </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=523">an OpenAPI 3 specification version. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=526">She's got some description. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=529">Then here are the paths. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=532">There's a get for planets, so slash planets. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=537">Then there's a get with slash planets slash ID. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=541">Pretty straightforward. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=543">It describes what you can expect from the API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=546">One nice thing here is that it also gives these examples </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=550">of what the values can be. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=552">That comes in handy when you're trying to generate a mock server. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=557">Without further ado, we're going to start by consuming </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=563">this OpenAPI spec, actually a different one from the planets one. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=566">This one's wordy. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=569">This is a CRM, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=571">a Customer Resource Management API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=574">It's pretty long, but effectively, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=576">we're just going to take this, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=578">which is like multiple method API, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=580">and then just turn it into </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=581">some schemas that we can use in TypeScript. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=584">We'll do that with this tool called OpenAPI TypeScript, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=588">which just takes any valid spec of OpenAPI, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=592">and then turns it into TypeScript schema. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=597">Let's copy this. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=600">We'll just run that. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=602">It might ask me to install this. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=604">Okay, that's fine. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=609">One second. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=616">I think I have a typo there. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=620">Sorry. That created the schema.ts file here. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=631">For each of the endpoints, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=634">I've generated these different interfaces in TypeScript. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=638">I've got the slash CRM slash leads endpoint, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=641">and that's a get operation, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=643">and there's also a post operation for that. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=646">Then I've got these different webhooks. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=649">I've got the interfaces that are specific </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=651">to the regex that they're described with. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=656">For example, this needs to be ISO format for time, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=661">and then I've got all that that just read </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=663">directly from that OpenAPI spec. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=666">That just continues forever. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=667">It's a pretty long API, so I won't make that too long. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=672">Pretty simple. This would work in any language. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=676">There's tooling for this all </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=678">because you have the specification </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=680">that describes this API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=683">We'll skip through this. We already talked about this API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=689">We'll move on to mocking. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=691">We're going to mock that planets API that I just showed. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=698">Let me install that too. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=709">What this is going to do is it's going to spin up a web server </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=711">on port 8080, and then in Repolit, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=717">basically, we'll forward port 8080 to this domain here. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=723">From that, I can make a get request against this. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=726">I'll come over here to the postman </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=728">and then make a get against planets. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=731">Then you'll see here that I get a planet Saturn back. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=736">Then also, there's another API endpoint where I could do an ID, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=740">and so I'll also get planet back for that. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=744">Simply, I didn't write any code, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=747">and then I've got an API that just works </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=749">against that specification, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=750">which could come in handy if you're working </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=752">with APIs like I am all day. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=755">All right, so let's do the next one. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=758">So, okay. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=763">So, next, we're going to spin up some documentation. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=767">So, I'm going to use this tool called Redocly, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=771">which takes an open API specification, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=774">all the examples, and then provides a nice page </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=776">for you to display your REST API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=779">So, let's do that. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=802">Okay, so. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=808">Okay, so basically, this whole API is described in that doc, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=811">and then what you get is this page here. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=814">So, it has all the notes, explains the headers in your API, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=819">API keys, and then if you come down to the bottom here </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=822">where the actual API is, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=824">so it'll give you any kind of authorization parameters. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=828">It'll give you some examples of code, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=829">so you can do Python or Java, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=833">and it will automatically generate </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=834">how this code should look. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=836">It gives you all your responses, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=838">and it's pretty solid for just auto-generating it, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=844">and as you get used to using Redocly, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=848">you can generate nicer and nicer pages, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=851">and Redocly isn't the only tool that works </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=853">with these open API 3 specs. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=855">There's several, but this is kind of one of the nicest </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=857">and sort of easiest to use ones, so it's one that I recommend. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=862">All right, so let's keep moving here. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=867">So, the next one, we're gonna generate a Postman collection, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=871">so let's see. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=873">Let's actually just close this web view. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=875">I won't need that anymore. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=876">Move this over here, and okay, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=881">so we're gonna take that same example spec </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=884">that has a CRM API and make a Postman collection, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=889">so then we'll import that into Postman afterward. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=906">Okay, so that was saved in this temp directory, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=910">so we got temp converted, CRM API.json, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=915">so we'll download that, and then open up Postman, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=920">import new collection, and sweet. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=928">So, now we've got that full API in Postman, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=932">and then you can add any of these default values as well </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=937">and add a Postman environment if needed, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=939">so that's an easy way to get started </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=941">if you were trying to consume a new API. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=946">Okay, and finally, we're going to generate this SDK, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=950">so we're gonna take that same example spec </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=953">and then generate an SDK for TypeScript from it. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=966">Okay, so now we've got this SDK.ts, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=969">so this is effectively an SDK that you can import </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=974">and start using that implements this entire API, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=977">so it's got all the types, all of the methods, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=981">and exactly to the specification that was written. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=985">So, let's go back here. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=990">Okay, so these are all the benefits </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=992">that you can get from OpenAPI 3, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=994">so testing, being able to mock, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=997">being able to use the integrations in the ecosystem, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1000">and I think the most important, the sanity, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1002">so having a way to describe an API </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1005">and letting kind of all the heterogeneity happen </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1009">from however creative people want to be </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1011">in defining their APIs, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1012">but still having a way to describe it </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1014">has made my life a lot easier. </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1016">Being able to import the Stripe API as a spec </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1019">or the Plaid API just makes my life 100 times easier, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1023">and so I really, really love this tool, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1025">and if you haven't used it, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1027">I hope that you get a chance to, </a><a href="https://www.youtube.com/watch?v=S-tsCZIR5cc&t=1028">and that's it for me. </a>
+      </p>
+    </div>
+  </section>
+  </body>
+</html>
